@@ -28,6 +28,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#is-a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#is-a">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#is-a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#Genre"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -88,7 +101,14 @@
 
     <!-- http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#Genre -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#Genre"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#Genre">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#has-a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#Movie"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -110,6 +130,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#Video">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#Media"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#has-a"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#Genre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
 </rdf:RDF>
 
