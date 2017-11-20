@@ -1,0 +1,1001 @@
+record-number,title,year,popularity,comedy,fantasy,romance,horror,action,non-fiction,type
+1,Guardians of the Galaxy,2014,8.1,0,1,0,0,1,0,M
+2,Prometheus,2012,7,0,1,0,1,1,0,M
+3,Split,2016,7.3,0,0,0,1,1,0,M
+4,Sing,2016,7.2,1,0,0,0,0,0,M
+5,Suicide Squad,2016,6.2,0,1,0,0,1,0,M
+6,The Great Wall,2016,6.1,0,1,0,0,1,0,M
+7,La La Land,2016,8.3,1,1,0,0,0,1,M
+8,Mindhorn,2016,6.4,1,0,0,0,0,0,M
+9,The Lost City of Z,2016,7.1,0,0,0,0,1,1,M
+10,Passengers,2016,7,0,1,1,0,1,0,M
+11,Fantastic Beasts and Where to Find Them,2016,7.5,0,1,0,0,1,0,M
+12,Hidden Figures,2016,7.8,0,1,0,0,0,1,M
+13,Rogue One,2016,7.9,0,1,0,0,1,0,M
+14,Moana,2016,7.7,1,0,0,0,1,0,M
+15,Colossal,2016,6.4,1,1,0,0,1,0,M
+16,The Secret Life of Pets,2016,6.6,1,0,0,0,1,0,M
+17,Hacksaw Ridge,2016,8.2,0,1,0,0,0,1,M
+18,Jason Bourne,2016,6.7,0,0,0,0,1,0,M
+19,Lion,2016,8.1,0,1,0,0,0,1,M
+20,Arrival,2016,8,0,1,0,1,0,0,M
+21,Gold,2016,6.7,0,1,0,0,1,0,M
+22,Manchester by the Sea,2016,7.9,0,1,0,0,0,0,M
+23,Hounds of Love,2016,6.7,0,1,0,1,0,0,M
+24,Trolls,2016,6.5,1,0,0,0,1,0,M
+25,Independence Day: Resurgence,2016,5.3,0,1,0,0,1,0,M
+26,Paris pieds nus,2016,6.8,1,0,0,0,0,0,M
+27,Bahubali: The Beginning,2015,8.3,0,1,0,0,1,0,M
+28,Dead Awake,2016,4.7,0,0,0,1,1,0,M
+29,Bad Moms,2016,6.2,1,0,0,0,0,0,M
+30,Assassin's Creed,2016,5.9,0,1,0,0,1,0,M
+31,Why Him?,2016,6.3,1,0,0,0,0,0,M
+32,Nocturnal Animals,2016,7.5,0,1,0,0,1,0,M
+33,X-Men: Apocalypse,2016,7.1,0,1,0,0,1,0,M
+34,Deadpool,2016,8,1,0,0,0,1,0,M
+35,Resident Evil: The Final Chapter,2016,5.6,0,1,0,1,1,0,M
+36,Captain America: Civil War,2016,7.9,0,1,0,0,1,0,M
+37,Interstellar,2014,8.6,0,1,0,0,1,0,M
+38,Doctor Strange,2016,7.6,0,1,0,0,1,0,M
+39,The Magnificent Seven,2016,6.9,0,0,0,0,1,0,M
+40,5/25/77,2007,7.1,1,1,0,0,0,0,M
+41,Sausage Party,2016,6.3,1,0,0,0,1,0,M
+42,Moonlight,2016,7.5,0,1,0,0,0,0,M
+43,Don't Fuck in the Woods,2016,2.7,0,0,0,1,0,0,M
+44,The Founder,2016,7.2,0,1,0,0,0,1,M
+45,Lowriders,2016,6.3,0,1,0,0,0,0,M
+46,Pirates of the Caribbean: On Stranger Tides,2011,6.7,0,1,0,0,1,0,M
+47,Miss Sloane,2016,7.3,0,1,0,0,1,0,M
+48,Fallen,2016,5.6,0,1,0,0,1,0,M
+49,Star Trek Beyond,2016,7.1,0,1,0,0,1,0,M
+50,The Last Face,2016,3.7,0,1,0,0,0,0,M
+51,Star Wars: Episode VII - The Force Awakens,2015,8.1,0,1,0,0,1,0,M
+52,Underworld: Blood Wars,2016,5.8,0,1,0,0,1,0,M
+53,Mother's Day,2016,5.6,1,1,0,0,0,0,M
+54,John Wick,2014,7.2,0,0,0,1,1,0,M
+55,The Dark Knight,2008,9,0,1,0,1,1,0,M
+56,Silence,2016,7.3,0,1,0,0,1,1,M
+57,Don't Breathe,2016,7.2,0,0,0,1,1,0,M
+58,Me Before You,2016,7.4,0,1,1,0,0,0,M
+59,Their Finest,2016,7,1,1,1,0,0,0,M
+60,Sully,2016,7.5,0,1,0,0,0,1,M
+61,Batman v Superman: Dawn of Justice,2016,6.7,0,1,0,0,1,0,M
+62,The Autopsy of Jane Doe,2016,6.8,0,0,0,1,1,0,M
+63,The Girl on the Train,2016,6.5,0,1,0,1,0,0,M
+64,Fifty Shades of Grey,2015,4.1,0,1,1,0,1,0,M
+65,The Prestige,2006,8.5,0,1,0,1,0,0,M
+66,Kingsman: The Secret Service,2014,7.7,1,0,0,0,1,0,M
+67,Patriots Day,2016,7.4,0,1,0,0,1,1,M
+68,Mad Max: Fury Road,2015,8.1,0,1,0,0,1,0,M
+69,Wakefield,2016,7.5,0,1,0,0,0,0,M
+70,Deepwater Horizon,2016,7.2,0,1,0,0,1,0,M
+71,The Promise,2016,5.9,0,1,0,0,0,1,M
+72,Allied,2016,7.1,0,1,1,0,1,0,M
+73,A Monster Calls,2016,7.5,0,1,0,0,0,0,M
+74,Collateral Beauty,2016,6.8,0,1,1,0,0,0,M
+75,Zootopia,2016,8.1,1,0,0,0,1,0,M
+76,Pirates of the Caribbean: At World's End,2007,7.1,0,1,0,0,1,0,M
+77,The Avengers,2012,8.1,0,1,0,0,1,0,M
+78,Inglourious Basterds,2009,8.3,0,1,0,0,1,1,M
+79,Pirates of the Caribbean: Dead Man's Chest,2006,7.3,0,1,0,0,1,0,M
+80,Ghostbusters,2016,5.3,1,1,0,0,1,0,M
+81,Inception,2010,8.8,0,1,0,0,1,0,M
+82,Captain Fantastic,2016,7.9,1,1,0,0,0,0,M
+83,The Wolf of Wall Street,2013,8.2,1,0,0,1,0,1,M
+84,Gone Girl,2014,8.1,0,1,0,1,0,0,M
+85,Furious Seven,2015,7.2,0,0,0,1,1,0,M
+86,Jurassic World,2015,7,0,1,0,0,1,0,M
+87,Live by Night,2016,6.4,0,1,0,1,0,0,M
+88,Avatar,2009,7.8,0,1,0,0,1,0,M
+89,The Hateful Eight,2015,7.8,0,1,0,1,0,0,M
+90,The Accountant,2016,7.4,0,1,0,1,1,0,M
+91,Prisoners,2013,8.1,0,1,0,1,0,0,M
+92,Warcraft,2016,7,0,1,0,0,1,0,M
+93,The Help,2011,8.1,0,1,0,0,0,0,M
+94,War Dogs,2016,7.1,1,1,0,1,0,0,M
+95,Avengers: Age of Ultron,2015,7.4,0,1,0,0,1,0,M
+96,The Nice Guys,2016,7.4,1,0,0,1,1,0,M
+97,Kimi no na wa,2016,8.6,1,1,0,0,0,0,M
+98,The Void,2016,5.8,0,1,0,1,0,0,M
+99,Personal Shopper,2016,6.3,0,1,0,1,1,0,M
+100,The Departed,2006,8.5,0,1,0,1,1,0,M
+101,Legend,2015,7,0,1,0,1,0,1,M
+102,Thor,2011,7,0,1,0,0,1,0,M
+103,The Martian,2015,8,0,1,0,0,1,0,M
+104,Contratiempo,2016,7.9,0,0,0,1,1,0,M
+105,The Man from U.N.C.L.E.,2015,7.3,1,0,0,0,1,0,M
+106,Hell or High Water,2016,7.7,0,1,0,1,1,0,M
+107,The Comedian,2016,5.4,1,0,0,0,0,0,M
+108,The Legend of Tarzan,2016,6.3,0,1,0,0,1,0,M
+109,All We Had,2016,5.8,0,1,0,0,0,0,M
+110,Ex Machina,2014,7.7,0,1,0,1,0,0,M
+111,The Belko Experiment,2016,6.3,0,0,0,1,1,0,M
+112,12 Years a Slave,2013,8.1,0,1,0,0,0,1,M
+113,The Bad Batch,2016,6.1,0,1,1,0,0,0,M
+114,300,2006,7.7,0,1,0,0,1,1,M
+115,Harry Potter and the Deathly Hallows: Part 2,2011,8.1,0,1,0,0,1,0,M
+116,Office Christmas Party,2016,5.8,1,0,0,0,0,0,M
+117,The Neon Demon,2016,6.2,0,0,0,1,1,0,M
+118,Dangal,2016,8.8,0,1,0,0,1,1,M
+119,10 Cloverfield Lane,2016,7.2,0,1,0,1,0,0,M
+120,Finding Dory,2016,7.4,1,0,0,0,1,0,M
+121,Miss Peregrine's Home for Peculiar Children,2016,6.7,0,1,0,0,1,0,M
+122,Divergent,2014,6.7,0,1,0,1,1,0,M
+123,Mike and Dave Need Wedding Dates,2016,6,1,0,1,0,1,0,M
+124,Boyka: Undisputed IV,2016,7.4,0,0,0,0,1,0,M
+125,The Dark Knight Rises,2012,8.5,0,0,0,0,1,0,M
+126,The Jungle Book,2016,7.5,0,1,0,0,1,0,M
+127,Transformers: Age of Extinction,2014,5.7,0,1,0,0,1,0,M
+128,Nerve,2016,6.6,0,0,0,1,1,0,M
+129,Mamma Mia!,2008,6.4,1,0,0,0,0,1,M
+130,The Revenant,2015,8,0,1,0,0,1,0,M
+131,Fences,2016,7.3,0,1,0,0,0,0,M
+132,Into the Woods,2014,6,1,1,0,0,1,0,M
+133,The Shallows,2016,6.4,0,1,0,1,1,0,M
+134,Whiplash,2014,8.5,0,1,0,0,0,1,M
+135,Furious 6,2013,7.1,0,0,0,1,1,0,M
+136,The Place Beyond the Pines,2012,7.3,0,1,0,1,1,0,M
+137,No Country for Old Men,2007,8.1,0,1,0,1,1,0,M
+138,The Great Gatsby,2013,7.3,0,1,1,0,0,0,M
+139,Shutter Island,2010,8.1,0,0,0,1,1,0,M
+140,Brimstone,2016,7.1,0,0,0,1,1,0,M
+141,Star Trek,2009,8,0,1,0,0,1,0,M
+142,Diary of a Wimpy Kid,2010,6.2,1,0,0,0,0,0,M
+143,The Big Short,2015,7.8,1,1,0,0,0,1,M
+144,Room,2015,8.2,0,1,0,0,0,0,M
+145,Django Unchained,2012,8.4,0,1,0,0,1,0,M
+146,Ah-ga-ssi,2016,8.1,0,1,1,1,0,0,M
+147,The Edge of Seventeen,2016,7.4,1,1,0,0,0,0,M
+148,Watchmen,2009,7.6,0,1,0,1,1,0,M
+149,Superbad,2007,7.6,1,0,0,0,0,0,M
+150,Inferno,2016,6.2,0,0,0,1,1,0,M
+151,The BFG,2016,6.4,0,1,0,0,1,0,M
+152,The Hunger Games,2012,7.2,0,1,0,0,1,0,M
+153,White Girl,2016,5.8,0,1,0,0,0,0,M
+154,Sicario,2015,7.6,0,1,0,1,1,0,M
+155,Twin Peaks: The Missing Pieces,2014,8.1,0,1,0,1,0,0,M
+156,Aliens vs Predator - Requiem,2007,4.7,0,1,0,1,1,0,M
+157,Pacific Rim,2013,7,0,1,0,0,1,0,M
+158,"Crazy, Stupid, Love.",2011,7.4,1,1,1,0,0,0,M
+159,Scott Pilgrim vs. the World,2010,7.5,1,1,0,0,1,0,M
+160,Hot Fuzz,2007,7.9,1,0,0,1,1,0,M
+161,Mine,2016,6,0,0,0,0,1,1,M
+162,Free Fire,2016,7,1,0,0,1,1,0,M
+163,X-Men: Days of Future Past,2014,8,0,1,0,0,1,0,M
+164,Jack Reacher: Never Go Back,2016,6.1,0,0,0,1,1,0,M
+165,Casino Royale,2006,8,0,0,0,0,1,0,M
+166,Twilight,2008,5.2,0,1,1,0,0,0,M
+167,Now You See Me 2,2016,6.5,1,0,0,0,1,0,M
+168,Woman in Gold,2015,7.3,0,1,0,0,0,1,M
+169,13 Hours,2016,7.3,0,1,0,0,1,1,M
+170,Spectre,2015,6.8,0,0,0,0,1,0,M
+171,Nightcrawler,2014,7.9,0,1,0,1,1,0,M
+172,Kubo and the Two Strings,2016,7.9,1,0,0,0,1,0,M
+173,Beyond the Gates,2016,5.2,0,0,0,1,1,0,M
+174,Her,2013,8,0,1,1,0,0,0,M
+175,Frozen,2013,7.5,1,0,0,0,1,0,M
+176,Tomorrowland,2015,6.5,0,0,0,0,1,0,M
+177,Dawn of the Planet of the Apes,2014,7.6,0,1,0,0,1,0,M
+178,Tropic Thunder,2008,7,1,0,0,0,1,0,M
+179,The Conjuring 2,2016,7.4,0,0,0,1,1,0,M
+180,Ant-Man,2015,7.3,1,0,0,0,1,0,M
+181,Bridget Jones's Baby,2016,6.7,1,0,1,0,0,0,M
+182,The VVitch: A New-England Folktale,2015,6.8,0,0,0,1,0,0,M
+183,Cinderella,2015,7,0,1,0,0,0,0,M
+184,Realive,2016,5.9,0,1,0,0,0,0,M
+185,Forushande,2016,8,0,1,0,0,1,0,M
+186,Love,2015,6,0,1,1,0,0,0,M
+187,Billy Lynn's Long Halftime Walk,2016,6.3,0,1,0,0,0,1,M
+188,Crimson Peak,2015,6.6,0,1,0,1,0,0,M
+189,Drive,2011,7.8,0,1,0,1,0,0,M
+190,Trainwreck,2015,6.3,1,1,1,0,0,0,M
+191,The Light Between Oceans,2016,7.2,0,1,1,0,0,0,M
+192,Below Her Mouth,2016,5.6,0,1,0,0,0,0,M
+193,Spotlight,2015,8.1,0,1,0,1,0,1,M
+194,Morgan,2016,5.8,0,1,0,1,1,0,M
+195,Warrior,2011,8.2,0,1,0,0,1,1,M
+196,Captain America: The First Avenger,2011,6.9,0,1,0,0,1,0,M
+197,Hacker,2016,6.3,0,1,0,1,1,0,M
+198,Into the Wild,2007,8.1,0,1,0,0,1,1,M
+199,The Imitation Game,2014,8.1,0,1,0,0,1,1,M
+200,Central Intelligence,2016,6.3,1,0,0,1,1,0,M
+201,Edge of Tomorrow,2014,7.9,0,1,0,0,1,0,M
+202,A Cure for Wellness,2016,6.5,0,1,0,1,0,0,M
+203,Snowden,2016,7.3,0,1,0,0,1,1,M
+204,Iron Man,2008,7.9,0,1,0,0,1,0,M
+205,Allegiant,2016,5.7,0,0,0,1,1,0,M
+206,X: First Class,2011,7.8,0,1,0,0,1,0,M
+207,Raw (II),2016,7.5,0,1,0,1,0,0,M
+208,Paterson,2016,7.5,1,1,1,0,0,0,M
+209,Bridesmaids,2011,6.8,1,0,1,0,0,0,M
+210,The Girl with All the Gifts,2016,6.7,0,1,0,1,1,0,M
+211,San Andreas,2015,6.1,0,1,0,0,1,0,M
+212,Spring Breakers,2012,5.3,0,1,0,0,0,0,M
+213,Transformers,2007,7.1,0,1,0,0,1,0,M
+214,Old Boy,2013,5.8,0,1,0,1,1,0,M
+215,Thor: The Dark World,2013,7,0,1,0,0,1,0,M
+216,Gods of Egypt,2016,5.5,0,1,0,0,1,0,M
+217,Captain America: The Winter Soldier,2014,7.8,0,1,0,0,1,0,M
+218,Monster Trucks,2016,5.7,1,0,0,0,1,0,M
+219,A Dark Song,2016,6.1,0,1,0,1,0,0,M
+220,Kick-Ass,2010,7.7,1,0,0,0,1,0,M
+221,Hardcore Henry,2015,6.7,0,1,0,0,1,0,M
+222,Cars,2006,7.1,1,0,0,0,1,0,M
+223,It Follows,2014,6.9,0,0,0,1,0,0,M
+224,The Girl with the Dragon Tattoo,2011,7.8,0,1,0,1,0,0,M
+225,We're the Millers,2013,7,1,0,0,1,0,0,M
+226,American Honey,2016,7,0,1,0,0,0,0,M
+227,The Lobster,2015,7.1,1,1,1,0,0,0,M
+228,Predators,2010,6.4,0,1,0,0,1,0,M
+229,Maleficent,2014,7,0,0,0,0,1,0,M
+230,Rupture,2016,4.8,0,1,0,1,1,0,M
+231,Pan's Labyrinth,2006,8.2,0,1,0,0,0,1,M
+232,A Kind of Murder,2016,5.2,0,1,0,1,1,0,M
+233,Apocalypto,2006,7.8,0,1,0,0,1,0,M
+234,Mission: Impossible - Rogue Nation,2015,7.4,0,0,0,0,1,0,M
+235,The Huntsman: Winter's War,2016,6.1,0,1,0,0,1,0,M
+236,The Perks of Being a Wallflower,2012,8,0,1,1,0,0,0,M
+237,Jackie,2016,6.8,0,1,0,0,0,1,M
+238,The Disappointments Room,2016,3.9,0,1,0,1,1,0,M
+239,The Grand Budapest Hotel,2014,8.1,1,1,0,0,1,0,M
+240,The Host,2013,5.9,0,0,1,0,1,0,M
+241,Fury,2014,7.6,0,1,0,0,1,1,M
+242,Inside Out,2015,8.2,1,0,0,0,1,0,M
+243,Rock Dog,2016,5.8,1,0,0,0,1,0,M
+244,Terminator Genisys,2015,6.5,0,1,0,0,1,0,M
+245,Percy Jackson & the Olympians: The Lightning Thief,2010,5.9,0,1,0,0,1,0,M
+246,Les MisÃƒÂ©rables,2012,7.6,0,1,1,0,0,1,M
+247,Children of Men,2006,7.9,0,1,0,0,1,0,M
+248,20th Century Women,2016,7.4,1,1,0,0,0,0,M
+249,Spy,2015,7.1,1,0,0,1,1,0,M
+250,The Intouchables,2011,8.6,1,1,0,0,0,1,M
+251,Bonjour Anne,2016,4.9,1,1,1,0,0,0,M
+252,Kynodontas,2009,7.3,0,1,0,0,1,0,M
+253,Straight Outta Compton,2015,7.9,0,1,0,0,0,1,M
+254,The Amazing Spider-Man 2,2014,6.7,0,1,0,0,1,0,M
+255,The Conjuring,2013,7.5,0,0,0,1,1,0,M
+256,The Hangover,2009,7.8,1,0,0,0,0,0,M
+257,Battleship,2012,5.8,0,1,0,0,1,0,M
+258,Rise of the Planet of the Apes,2011,7.6,0,1,0,0,1,0,M
+259,Lights Out,2016,6.4,0,0,0,1,0,0,M
+260,Norman: The Moderate Rise and Tragic Fall of a New York Fixer,2016,7.1,0,1,0,0,1,0,M
+261,Birdman or (The Unexpected Virtue of Ignorance),2014,7.8,1,1,1,0,0,0,M
+262,Black Swan,2010,8,0,1,0,0,1,0,M
+263,Dear White People,2014,6.2,1,1,0,0,0,0,M
+264,Nymphomaniac: Vol. I,2013,7,0,1,0,0,0,0,M
+265,Teenage Mutant Ninja Turtles: Out of the Shadows,2016,6,1,0,0,0,1,0,M
+266,Knock Knock,2015,4.9,0,1,0,1,1,0,M
+267,Dirty Grandpa,2016,6,1,0,0,0,0,0,M
+268,Cloud Atlas,2012,7.5,0,1,0,0,0,0,M
+269,X-Men Origins: Wolverine,2009,6.7,0,1,0,0,1,0,M
+270,Satanic,2016,3.7,0,0,0,1,0,0,M
+271,Skyfall,2012,7.8,0,0,0,0,1,0,M
+272,The Hobbit: An Unexpected Journey,2012,7.9,0,1,0,0,1,0,M
+273,21 Jump Street,2012,7.2,1,0,0,1,1,0,M
+274,Sing Street,2016,8,1,1,0,0,0,1,M
+275,Ballerina,2016,6.8,1,0,0,0,1,0,M
+276,Oblivion,2013,7,0,0,0,1,1,0,M
+277,22 Jump Street,2014,7.1,1,0,0,1,1,0,M
+278,Zodiac,2007,7.7,0,1,0,1,0,1,M
+279,Everybody Wants Some!!,2016,7,1,0,0,0,0,0,M
+280,Iron Man Three,2013,7.2,0,1,0,0,1,0,M
+281,Now You See Me,2013,7.3,0,0,0,1,1,0,M
+282,Sherlock Holmes,2009,7.6,0,0,0,1,1,0,M
+283,Death Proof,2007,7.1,0,0,0,0,1,0,M
+284,The Danish Girl,2015,7,0,1,1,0,0,1,M
+285,Hercules,2014,6,0,0,0,0,1,0,M
+286,Sucker Punch,2011,6.1,0,1,0,0,1,0,M
+287,Keeping Up with the Joneses,2016,5.8,1,0,0,0,1,0,M
+288,Jupiter Ascending,2015,5.3,0,1,0,0,1,0,M
+289,Masterminds,2016,5.8,1,0,0,1,1,0,M
+290,Iris,2016,6.1,0,0,0,0,1,0,M
+291,Busanhaeng,2016,7.5,0,1,0,1,1,0,M
+292,Pitch Perfect,2012,7.2,1,0,1,0,0,1,M
+293,Neighbors 2: Sorority Rising,2016,5.7,1,0,0,0,0,0,M
+294,The Exception,2016,7.7,0,1,0,0,0,0,M
+295,Man of Steel,2013,7.1,0,1,0,0,1,0,M
+296,The Choice,2016,6.6,0,1,1,0,0,0,M
+297,Ice Age: Collision Course,2016,5.7,1,0,0,0,1,0,M
+298,The Devil Wears Prada,2006,6.8,1,1,0,0,0,0,M
+299,The Infiltrator,2016,7.1,0,1,0,1,0,1,M
+300,There Will Be Blood,2007,8.1,0,1,0,0,0,1,M
+301,The Equalizer,2014,7.2,0,0,0,1,1,0,M
+302,Lone Survivor,2013,7.5,0,1,0,0,1,1,M
+303,The Cabin in the Woods,2012,7,0,0,0,1,0,0,M
+304,The House Bunny,2008,5.5,1,0,1,0,0,0,M
+305,She's Out of My League,2010,6.4,1,0,1,0,0,0,M
+306,Inherent Vice,2014,6.7,1,1,0,1,0,0,M
+307,Alice Through the Looking Glass,2016,6.2,0,1,0,0,1,0,M
+308,Vincent N Roxxy,2016,5.5,0,1,0,1,1,0,M
+309,The Fast and the Furious: Tokyo Drift,2006,6,0,0,0,1,1,0,M
+310,How to Be Single,2016,6.1,1,0,1,0,0,0,M
+311,The Blind Side,2009,7.7,0,1,0,0,0,1,M
+312,La vie d'AdÃƒÂ¨le,2013,7.8,0,1,1,0,0,0,M
+313,The Babadook,2014,6.8,0,1,0,1,0,0,M
+314,The Hobbit: The Battle of the Five Armies,2014,7.4,0,1,0,0,1,0,M
+315,Harry Potter and the Order of the Phoenix,2007,7.5,0,1,0,0,1,0,M
+316,Snowpiercer,2013,7,0,1,0,0,1,0,M
+317,The 5th Wave,2016,5.2,0,1,0,0,1,0,M
+318,The Stakelander,2016,5.3,0,0,0,1,1,0,M
+319,The Visit,2015,6.2,1,0,0,1,1,0,M
+320,Fast Five,2011,7.3,0,0,0,1,1,0,M
+321,Step Up,2006,6.5,0,1,0,1,0,1,M
+322,Lovesong,2016,6.4,0,1,0,0,0,0,M
+323,RocknRolla,2008,7.3,0,0,0,1,1,0,M
+324,In Time,2011,6.7,0,1,0,0,1,0,M
+325,The Social Network,2010,7.7,0,1,0,0,0,1,M
+326,The Last Witch Hunter,2015,6,0,1,0,0,1,0,M
+327,Victor Frankenstein,2015,6,0,1,0,1,0,0,M
+328,A Street Cat Named Bob,2016,7.4,1,1,0,0,0,1,M
+329,Green Room,2015,7,0,0,0,1,1,0,M
+330,Blackhat,2015,5.4,0,1,0,1,0,0,M
+331,Storks,2016,6.9,1,0,0,0,1,0,M
+332,American Sniper,2014,7.3,0,1,0,0,1,1,M
+333,Dallas Buyers Club,2013,8,0,1,0,0,0,1,M
+334,Lincoln,2012,7.4,0,1,0,0,0,1,M
+335,Rush,2013,8.1,0,1,0,0,1,1,M
+336,Before I Wake,2016,6.1,0,1,0,1,0,0,M
+337,Silver Linings Playbook,2012,7.8,1,1,1,0,0,0,M
+338,Tracktown,2016,5.9,0,1,0,0,0,1,M
+339,The Fault in Our Stars,2014,7.8,0,1,1,0,0,0,M
+340,Blended,2014,6.5,1,0,1,0,0,0,M
+341,Fast & Furious,2009,6.6,0,0,0,1,1,0,M
+342,Looper,2012,7.4,0,1,0,1,1,0,M
+343,White House Down,2013,6.4,0,1,0,0,1,0,M
+344,Pete's Dragon,2016,6.8,0,1,0,0,1,0,M
+345,Spider-Man 3,2007,6.2,0,0,0,0,1,0,M
+346,The Three Musketeers,2011,5.8,0,0,1,0,1,0,M
+347,Stardust,2007,7.7,0,1,0,0,1,0,M
+348,American Hustle,2013,7.3,0,1,0,1,0,0,M
+349,Jennifer's Body,2009,5.1,1,0,0,1,0,0,M
+350,Midnight in Paris,2011,7.7,1,1,1,0,0,0,M
+351,Lady Macbeth,2016,7.3,0,1,0,0,0,0,M
+352,Joy,2015,6.6,0,1,0,0,0,0,M
+353,The Dressmaker,2015,7.1,1,1,0,0,0,0,M
+354,CafÃƒÂ© Society,2016,6.7,1,1,1,0,0,0,M
+355,Insurgent,2015,6.3,0,1,0,0,1,0,M
+356,Seventh Son,2014,5.5,0,1,0,0,1,0,M
+357,Demain tout commence,2016,7.4,1,1,0,0,0,0,M
+358,The Theory of Everything,2014,7.7,0,1,1,0,0,1,M
+359,This Is the End,2013,6.6,1,1,0,0,0,0,M
+360,About Time,2013,7.8,1,1,0,0,0,0,M
+361,Step Brothers,2008,6.9,1,0,0,0,0,0,M
+362,Clown,2014,5.7,0,0,0,1,1,0,M
+363,Star Trek Into Darkness,2013,7.8,0,1,0,0,1,0,M
+364,Zombieland,2009,7.7,1,0,0,1,1,0,M
+365,"Hail, Caesar!",2016,6.3,1,0,0,1,0,0,M
+366,Slumdog Millionaire,2008,8,0,1,0,0,0,0,M
+367,The Twilight Saga: Breaking Dawn - Part 2,2012,5.5,0,1,0,0,1,0,M
+368,American Wrestler: The Wizard,2016,6.9,0,1,0,0,0,1,M
+369,The Amazing Spider-Man,2012,7,0,0,0,0,1,0,M
+370,Ben-Hur,2016,5.7,0,1,0,0,1,0,M
+371,Sleight,2016,6,0,1,0,0,1,0,M
+372,The Maze Runner,2014,6.8,0,1,0,1,1,0,M
+373,Criminal,2016,6.3,0,1,0,1,1,0,M
+374,Wanted,2008,6.7,0,1,0,1,1,0,M
+375,Florence Foster Jenkins,2016,6.9,1,1,0,0,0,1,M
+376,Collide,2016,5.7,0,0,0,1,1,0,M
+377,Black Mass,2015,6.9,0,1,0,1,0,1,M
+378,Creed,2015,7.6,0,1,0,0,0,1,M
+379,Swiss Army Man,2016,7.1,1,1,0,0,1,0,M
+380,The Expendables 3,2014,6.1,0,0,0,0,1,0,M
+381,What We Do in the Shadows,2014,7.6,1,1,0,1,0,0,M
+382,Southpaw,2015,7.4,0,1,0,0,0,1,M
+383,Hush,2016,6.6,0,0,0,1,1,0,M
+384,Bridge of Spies,2015,7.6,0,1,0,0,1,1,M
+385,The Lego Movie,2014,7.8,1,0,0,0,1,0,M
+386,Everest,2015,7.1,0,1,0,0,1,0,M
+387,Pixels,2015,5.6,1,0,0,0,1,0,M
+388,Robin Hood,2010,6.7,0,1,0,0,1,0,M
+389,The Wolverine,2013,6.7,0,1,0,0,1,0,M
+390,John Carter,2012,6.6,0,1,0,0,1,0,M
+391,Keanu,2016,6.3,1,0,0,0,1,0,M
+392,The Gunman,2015,5.8,0,1,0,1,1,0,M
+393,Steve Jobs,2015,7.2,0,1,0,0,0,1,M
+394,Whisky Galore,2016,5,1,0,1,0,0,0,M
+395,Grown Ups 2,2013,5.4,1,0,0,0,0,0,M
+396,The Age of Adaline,2015,7.2,0,1,1,0,0,0,M
+397,The Incredible Hulk,2008,6.8,0,1,0,0,1,0,M
+398,Couples Retreat,2009,5.5,1,0,0,0,0,0,M
+399,Absolutely Anything,2015,6,1,1,0,0,0,0,M
+400,Magic Mike,2012,6.1,1,1,0,0,0,0,M
+401,Minions,2015,6.4,1,0,0,0,1,0,M
+402,The Black Room,2016,3.9,0,0,0,1,0,0,M
+403,Bronson,2008,7.1,0,0,0,1,1,1,M
+404,Despicable Me,2010,7.7,1,0,0,0,1,0,M
+405,The Best of Me,2014,6.7,0,1,1,0,0,0,M
+406,The Invitation,2015,6.7,0,1,0,1,1,0,M
+407,Zero Dark Thirty,2012,7.4,0,1,0,0,1,1,M
+408,Tangled,2010,7.8,1,0,0,0,1,0,M
+409,The Hunger Games: Mockingjay - Part 2,2015,6.6,0,1,0,0,1,0,M
+410,Vacation,2015,6.1,1,0,0,0,1,0,M
+411,Taken,2008,7.8,0,0,0,0,1,0,M
+412,Pitch Perfect 2,2015,6.5,1,0,0,0,0,1,M
+413,Monsters University,2013,7.3,1,0,0,0,1,0,M
+414,Elle,2016,7.2,0,1,0,1,1,0,M
+415,Mechanic: Resurrection,2016,5.6,0,0,0,1,1,0,M
+416,Tusk,2014,5.4,1,1,0,1,0,0,M
+417,The Headhunter's Calling,2016,6.9,0,1,0,0,0,0,M
+418,Atonement,2007,7.8,0,1,1,1,0,0,M
+419,Harry Potter and the Deathly Hallows: Part 1,2010,7.7,0,1,0,0,1,0,M
+420,Shame,2011,7.2,0,1,0,0,0,0,M
+421,Hanna,2011,6.8,0,1,0,0,1,0,M
+422,The Babysitters,2007,5.7,0,1,0,0,0,0,M
+423,Pride and Prejudice and Zombies,2016,5.8,0,0,1,1,1,0,M
+424,300: Rise of an Empire,2014,6.2,0,1,0,0,1,0,M
+425,London Has Fallen,2016,5.9,0,1,0,1,1,0,M
+426,The Curious Case of Benjamin Button,2008,7.8,0,1,1,0,0,0,M
+427,Sin City: A Dame to Kill For,2014,6.5,0,0,0,1,1,0,M
+428,The Bourne Ultimatum,2007,8.1,0,0,0,1,1,0,M
+429,Srpski film,2010,5.2,0,0,0,1,1,0,M
+430,The Purge: Election Year,2016,6,0,1,0,1,1,0,M
+431,3 Idiots,2009,8.4,1,1,0,0,0,0,M
+432,Zoolander 2,2016,4.7,1,0,0,0,0,0,M
+433,World War Z,2013,7,0,0,0,1,1,0,M
+434,Mission: Impossible - Ghost Protocol,2011,7.4,0,0,0,0,1,0,M
+435,Let Me Make You a Martyr,2016,6.4,0,1,0,1,1,0,M
+436,Filth,2013,7.1,1,1,0,1,0,0,M
+437,The Longest Ride,2015,7.1,0,1,1,0,0,0,M
+438,The imposible,2012,7.6,0,1,0,0,1,0,M
+439,Kick-Ass 2,2013,6.6,1,0,0,1,1,0,M
+440,Folk Hero & Funny Guy,2016,5.6,1,0,0,0,0,0,M
+441,Oz the Great and Powerful,2013,6.3,0,1,0,0,1,0,M
+442,Brooklyn,2015,7.5,0,1,1,0,0,0,M
+443,Coraline,2009,7.7,1,1,0,0,0,0,M
+444,Blue Valentine,2010,7.4,0,1,1,0,0,0,M
+445,The Thinning,2016,6,0,0,0,0,1,0,M
+446,Silent Hill,2006,6.6,0,0,0,1,1,0,M
+447,Dredd,2012,7.1,0,1,0,0,1,0,M
+448,Hunt for the Wilderpeople,2016,7.9,1,1,0,0,1,0,M
+449,Big Hero 6,2014,7.8,1,0,0,0,1,0,M
+450,Carrie,2013,5.9,0,1,0,1,0,0,M
+451,Iron Man 2,2010,7,0,1,0,0,1,0,M
+452,Demolition,2015,7,1,1,0,0,0,0,M
+453,Pandorum,2009,6.8,0,0,0,1,1,0,M
+454,Olympus Has Fallen,2013,6.5,0,0,0,0,1,0,M
+455,I Am Number Four,2011,6.1,0,1,0,0,1,0,M
+456,Jagten,2012,8.3,0,1,0,0,0,0,M
+457,The Proposal,2009,6.7,1,1,1,0,0,0,M
+458,Get Hard,2015,6,1,0,0,1,0,0,M
+459,Just Go with It,2011,6.4,1,0,1,0,0,0,M
+460,Revolutionary Road,2008,7.3,0,1,1,0,0,0,M
+461,The Town,2010,7.6,0,1,0,1,1,0,M
+462,The Boy,2016,6,0,0,0,1,1,0,M
+463,Denial,2016,6.6,0,1,0,0,0,1,M
+464,Predestination,2014,7.5,0,1,0,1,0,0,M
+465,Goosebumps,2015,6.3,1,0,0,0,1,0,M
+466,Sherlock Holmes: A Game of Shadows,2011,7.5,0,0,0,1,1,0,M
+467,Salt,2010,6.4,0,0,0,1,1,0,M
+468,Enemy,2013,6.9,0,0,0,1,1,0,M
+469,District 9,2009,8,0,1,0,0,1,0,M
+470,The Other Guys,2010,6.7,1,0,0,1,1,0,M
+471,American Gangster,2007,7.8,0,1,0,1,0,1,M
+472,Marie Antoinette,2006,6.4,0,1,0,0,0,1,M
+473,2012,2009,5.8,0,1,0,0,1,0,M
+474,Harry Potter and the Half-Blood Prince,2009,7.5,0,1,0,0,1,0,M
+475,Argo,2012,7.7,0,1,0,0,0,1,M
+476,Eddie the Eagle,2016,7.4,1,1,0,0,0,1,M
+477,The Lives of Others,2006,8.5,0,1,0,0,1,0,M
+478,Pet,2016,5.7,0,0,0,1,1,0,M
+479,Paint It Black,2016,8.3,0,1,0,0,0,0,M
+480,Macbeth,2015,6.7,0,1,0,0,0,1,M
+481,Forgetting Sarah Marshall,2008,7.2,1,1,1,0,0,0,M
+482,The Giver,2014,6.5,0,1,1,0,0,0,M
+483,Triple 9,2016,6.3,0,1,0,1,1,0,M
+484,Perfetti sconosciuti,2016,7.7,1,1,0,0,0,0,M
+485,Angry Birds,2016,6.3,1,0,0,0,1,0,M
+486,Moonrise Kingdom,2012,7.8,1,1,0,0,1,0,M
+487,Hairspray,2007,6.7,1,1,0,0,0,0,M
+488,Safe Haven,2013,6.7,0,1,1,0,1,0,M
+489,Focus,2015,6.6,1,1,0,1,0,0,M
+490,Ratatouille,2007,8,1,0,0,0,0,0,M
+491,Stake Land,2010,6.5,0,1,0,1,0,0,M
+492,The Book of Eli,2010,6.9,0,1,0,0,1,0,M
+493,Cloverfield,2008,7,0,1,0,1,1,0,M
+494,Point Break,2015,5.3,0,0,0,1,1,1,M
+495,Under the Skin,2013,6.3,0,1,0,1,0,0,M
+496,I Am Legend,2007,7.2,0,1,0,1,0,0,M
+497,Men in Black 3,2012,6.8,1,0,0,0,1,0,M
+498,Super 8,2011,7.1,0,1,0,1,1,0,M
+499,Law Abiding Citizen,2009,7.4,0,1,0,1,1,0,M
+500,Up,2009,8.3,1,0,0,0,1,0,M
+501,Maze Runner: The Scorch Trials,2015,6.3,0,1,0,0,1,0,M
+502,Carol,2015,7.2,0,1,1,0,0,0,M
+503,Imperium,2016,6.5,0,1,0,1,1,0,M
+504,Youth,2015,7.3,1,1,0,0,0,1,M
+505,Mr. Nobody,2009,7.9,0,1,1,0,0,0,M
+506,City of Tiny Lights,2016,5.7,0,1,0,1,1,0,M
+507,Savages,2012,6.5,0,1,0,1,1,0,M
+508,(500) Days of Summer,2009,7.7,1,1,1,0,0,0,M
+509,Movie 43,2013,4.3,1,0,1,0,0,0,M
+510,Gravity,2013,7.8,0,1,0,0,1,0,M
+511,The Boy in the Striped Pyjamas,2008,7.8,0,1,0,0,0,1,M
+512,Shooter,2007,7.2,0,1,0,1,1,0,M
+513,The Happening,2008,5,0,1,0,0,1,0,M
+514,Bone Tomahawk,2015,7.1,0,1,0,1,1,0,M
+515,Magic Mike XXL,2015,5.7,1,1,0,0,0,1,M
+516,Easy A,2010,7.1,1,1,1,0,0,0,M
+517,Exodus: Gods and Kings,2014,6,0,1,0,0,1,0,M
+518,Chappie,2015,6.9,0,1,0,1,1,0,M
+519,The Hobbit: The Desolation of Smaug,2013,7.9,0,1,0,0,1,0,M
+520,Half of a Yellow Sun,2013,6.2,0,1,1,0,0,0,M
+521,Anthropoid,2016,7.2,0,0,0,0,1,1,M
+522,The Counselor,2013,5.3,0,1,0,1,1,0,M
+523,Viking,2016,4.7,0,1,0,0,1,1,M
+524,Whiskey Tango Foxtrot,2016,6.6,1,1,0,0,0,1,M
+525,Trust,2010,7,0,1,0,1,1,0,M
+526,Birth of the Dragon,2016,3.9,0,1,0,0,1,1,M
+527,Elysium,2013,6.6,0,1,0,0,1,0,M
+528,The Green Inferno,2013,5.4,0,0,0,1,1,0,M
+529,Godzilla,2014,6.4,0,1,0,0,1,0,M
+530,The Bourne Legacy,2012,6.7,0,0,0,1,1,0,M
+531,A Good Year,2006,6.9,1,1,1,0,0,0,M
+532,Friend Request,2016,5.4,0,0,0,1,1,0,M
+533,Deja Vu,2006,7,0,1,0,0,1,0,M
+534,Lucy,2014,6.4,0,1,0,0,1,0,M
+535,A Quiet Passion,2016,7.2,0,1,0,0,0,1,M
+536,Need for Speed,2014,6.5,0,1,0,1,1,0,M
+537,Jack Reacher,2012,7,0,0,0,1,1,0,M
+538,The Do-Over,2016,5.7,1,0,0,0,1,0,M
+539,True Crimes,2016,7.3,0,1,0,1,1,0,M
+540,American Pastoral,2016,6.1,0,1,0,1,0,0,M
+541,The Ghost Writer,2010,7.2,0,0,0,1,1,0,M
+542,Limitless,2011,7.4,0,1,0,1,1,0,M
+543,Spectral,2016,6.3,0,1,0,1,1,0,M
+544,P.S. I Love You,2007,7.1,0,1,1,0,0,0,M
+545,Zipper,2015,5.7,0,1,0,0,1,0,M
+546,Midnight Special,2016,6.7,0,1,0,1,0,0,M
+547,Don't Think Twice,2016,6.8,1,1,0,0,0,0,M
+548,Alice in Wonderland,2010,6.5,0,1,0,0,1,0,M
+549,Chuck,2016,6.8,0,1,0,0,0,1,M
+550,"I, Daniel Blake",2016,7.9,0,1,0,0,0,0,M
+551,The Break-Up,2006,5.8,1,1,1,0,0,0,M
+552,Loving,2016,7.1,0,1,1,0,0,1,M
+553,Fantastic Four,2015,4.3,0,1,0,0,1,0,M
+554,The Survivalist,2015,6.3,0,1,0,0,1,0,M
+555,Colonia,2015,7.1,0,1,1,0,1,0,M
+556,The Boy Next Door,2015,4.6,0,0,0,1,1,0,M
+557,The Gift,2015,7.1,0,0,0,1,1,0,M
+558,Dracula Untold,2014,6.3,0,1,0,0,1,0,M
+559,In the Heart of the Sea,2015,6.9,0,0,0,0,1,1,M
+560,Idiocracy,2006,6.6,1,1,0,0,1,0,M
+561,The Expendables,2010,6.5,0,0,0,0,1,0,M
+562,Evil Dead,2013,6.5,0,1,0,1,0,0,M
+563,Sinister,2012,6.8,0,0,0,1,0,0,M
+564,Wreck-It Ralph,2012,7.8,1,0,0,0,1,0,M
+565,Snow White and the Huntsman,2012,6.1,0,1,0,0,1,0,M
+566,Pan,2015,5.8,0,1,0,0,1,0,M
+567,Transformers: Dark of the Moon,2011,6.3,0,1,0,0,1,0,M
+568,Juno,2007,7.5,1,1,0,0,0,0,M
+569,A Hologram for the King,2016,6.1,1,1,0,0,0,0,M
+570,Money Monster,2016,6.5,0,1,0,1,1,0,M
+571,The Other Woman,2014,6,1,0,1,0,0,0,M
+572,Enchanted,2007,7.1,1,0,0,0,0,0,M
+573,The Intern,2015,7.1,1,1,0,0,0,0,M
+574,Little Miss Sunshine,2006,7.8,1,1,0,0,0,0,M
+575,Bleed for This,2016,6.8,0,1,0,0,0,1,M
+576,Clash of the Titans,2010,5.8,0,1,0,0,1,0,M
+577,The Finest Hours,2016,6.8,0,1,0,0,1,1,M
+578,Tron,2010,6.8,0,1,0,0,1,0,M
+579,The Hunger Games: Catching Fire,2013,7.6,0,0,0,1,1,0,M
+580,All Good Things,2010,6.3,0,1,0,1,0,0,M
+581,Kickboxer: Vengeance,2016,4.9,0,0,0,0,1,0,M
+582,The Last Airbender,2010,4.2,0,0,0,0,1,0,M
+583,Sex Tape,2014,5.1,1,0,1,0,0,0,M
+584,What to Expect When You're Expecting,2012,5.7,1,1,1,0,0,0,M
+585,Moneyball,2011,7.6,0,1,0,0,0,1,M
+586,Ghost Rider,2007,5.2,0,1,0,0,1,0,M
+587,Unbroken,2014,7.2,0,1,0,0,0,1,M
+588,Immortals,2011,6,0,1,0,0,1,0,M
+589,Sunshine,2007,7.3,0,1,0,0,1,0,M
+590,Brave,2012,7.2,1,0,0,0,1,0,M
+591,MÃƒÂ¤n som hatar kvinnor,2009,7.8,0,1,0,1,1,0,M
+592,Adoration,2013,6.2,0,1,1,0,0,0,M
+593,The Drop,2014,7.1,0,1,0,1,0,0,M
+594,She's the Man,2006,6.4,1,0,1,0,0,1,M
+595,Daddy's Home,2015,6.1,1,0,0,0,0,0,M
+596,Let Me In,2010,7.2,0,1,0,1,0,0,M
+597,Never Back Down,2008,6.6,0,1,0,0,1,1,M
+598,Grimsby,2016,6.2,1,0,0,0,1,0,M
+599,Moon,2009,7.9,0,1,0,1,0,0,M
+600,Megamind,2010,7.3,1,0,0,0,1,0,M
+601,Gangster Squad,2013,6.7,0,1,0,1,1,0,M
+602,Blood Father,2016,6.4,0,1,0,1,1,0,M
+603,He's Just Not That Into You,2009,6.4,1,1,1,0,0,0,M
+604,Kung Fu Panda 3,2016,7.2,1,0,0,0,1,0,M
+605,The Rise of the Krays,2015,5.1,0,1,0,1,0,0,M
+606,Handsome Devil,2016,7.4,0,1,0,0,0,0,M
+607,Winter's Bone,2010,7.2,0,1,0,0,0,0,M
+608,Horrible Bosses,2011,6.9,1,0,0,1,0,0,M
+609,Mommy,2014,8.1,0,1,0,0,0,0,M
+610,Hellboy II: The Golden Army,2008,7,0,1,0,0,1,0,M
+611,Beautiful Creatures,2013,6.2,0,1,1,0,0,0,M
+612,Toni Erdmann,2016,7.6,1,1,0,0,0,0,M
+613,The Lovely Bones,2009,6.7,0,1,0,0,1,0,M
+614,The Assassination of Jesse James by the Coward Robert Ford,2007,7.5,0,1,0,1,0,1,M
+615,Don Jon,2013,6.6,1,1,1,0,0,0,M
+616,Bastille Day,2016,6.3,0,1,0,1,1,0,M
+617,2307: Winter's Dream,2016,4,0,1,0,0,0,0,M
+618,Free State of Jones,2016,6.9,0,1,0,0,1,1,M
+619,Mr. Right,2015,6.3,1,0,1,0,1,0,M
+620,The Secret Life of Walter Mitty,2013,7.3,1,1,0,0,1,0,M
+621,Dope,2015,7.3,1,1,0,1,0,0,M
+622,Underworld Awakening,2012,6.4,0,1,0,1,1,0,M
+623,Antichrist,2009,6.6,0,1,0,1,0,0,M
+624,Friday the 13th,2009,5.6,0,0,0,1,0,0,M
+625,Taken 3,2014,6,0,0,0,0,1,0,M
+626,Total Recall,2012,6.3,0,0,0,1,1,0,M
+627,X-Men: The Last Stand,2006,6.7,0,1,0,0,1,0,M
+628,The Escort,2016,6,1,1,1,0,0,0,M
+629,The Whole Truth,2016,6.1,0,1,0,1,0,0,M
+630,Night at the Museum: Secret of the Tomb,2014,6.2,1,0,0,0,1,0,M
+631,Love & Other Drugs,2010,6.7,1,1,1,0,0,0,M
+632,The Interview,2014,6.6,1,0,0,0,0,0,M
+633,The Host,2006,7,1,1,0,1,0,0,M
+634,Megan Is Missing,2011,4.9,0,1,0,1,1,0,M
+635,WALLÃ‚Â·E,2008,8.4,1,0,0,0,1,0,M
+636,Knocked Up,2007,7,1,0,1,0,0,0,M
+637,Source Code,2011,7.5,0,1,1,1,0,0,M
+638,Lawless,2012,7.3,0,1,0,1,0,0,M
+639,Unfriended,2014,5.6,0,1,0,1,0,0,M
+640,American Reunion,2012,6.7,1,0,0,0,0,0,M
+641,The Pursuit of Happyness,2006,8,0,1,0,0,0,1,M
+642,Relatos salvajes,2014,8.1,1,1,0,0,1,0,M
+643,The Ridiculous 6,2015,4.8,1,0,0,0,1,0,M
+644,Frantz,2016,7.5,0,1,0,0,0,1,M
+645,Viral,2016,5.5,0,1,0,1,0,0,M
+646,Gran Torino,2008,8.2,0,1,0,0,0,0,M
+647,Burnt,2015,6.6,1,1,0,0,0,0,M
+648,Tall Men,2016,3.2,0,1,0,1,1,0,M
+649,Sleeping Beauty,2011,5.3,0,1,1,0,0,0,M
+650,Vampire Academy,2014,5.6,1,1,0,0,1,0,M
+651,Sweeney Todd: The Demon Barber of Fleet Street,2007,7.4,0,1,0,1,0,1,M
+652,Solace,2015,6.4,0,1,0,1,0,0,M
+653,Insidious,2010,6.8,0,0,0,1,1,0,M
+654,Popstar: Never Stop Never Stopping,2016,6.7,1,0,0,0,0,1,M
+655,The Levelling,2016,6.4,0,1,0,0,0,0,M
+656,Public Enemies,2009,7,0,1,0,1,0,1,M
+657,Boyhood,2014,7.9,0,1,0,0,0,0,M
+658,Teenage Mutant Ninja Turtles,2014,5.9,1,0,0,0,1,0,M
+659,Eastern Promises,2007,7.7,0,1,0,1,0,0,M
+660,The Daughter,2015,6.7,0,1,0,0,0,0,M
+661,Pineapple Express,2008,7,1,0,0,1,1,0,M
+662,The First Time,2012,6.9,1,1,1,0,0,0,M
+663,Gone Baby Gone,2007,7.7,0,1,0,1,0,0,M
+664,The Heat,2013,6.6,1,0,0,1,1,0,M
+665,L'avenir,2016,7.1,0,1,0,0,0,0,M
+666,Anna Karenina,2012,6.6,0,1,1,0,0,0,M
+667,Regression,2015,5.7,0,1,0,1,0,0,M
+668,Ted 2,2015,6.3,1,0,1,0,1,0,M
+669,Pain & Gain,2013,6.5,1,1,0,1,0,0,M
+670,Blood Diamond,2006,8,0,1,0,0,1,0,M
+671,Devil's Knot,2013,6.1,0,1,0,1,0,1,M
+672,Child 44,2015,6.5,0,1,0,1,1,0,M
+673,The Hurt Locker,2008,7.6,0,1,0,0,1,1,M
+674,Green Lantern,2011,5.6,0,1,0,0,1,0,M
+675,War on Everyone,2016,5.9,1,0,0,0,1,0,M
+676,The Mist,2007,7.2,0,0,0,1,0,0,M
+677,Escape Plan,2013,6.7,0,0,0,1,1,0,M
+678,"Love, Rosie",2014,7.2,1,0,1,0,0,0,M
+679,The DUFF,2015,6.5,1,0,0,0,0,0,M
+680,The Age of Shadows,2016,7.2,0,1,0,0,1,0,M
+681,The Hunger Games: Mockingjay - Part 1,2014,6.7,0,1,0,0,1,0,M
+682,We Need to Talk About Kevin,2011,7.5,0,1,0,1,1,0,M
+683,Love & Friendship,2016,6.5,1,1,1,0,0,0,M
+684,The Mortal Instruments: City of Bones,2013,5.9,0,1,0,1,1,0,M
+685,Seven Pounds,2008,7.7,0,1,1,0,0,0,M
+686,The King's Speech,2010,8,0,1,0,0,0,1,M
+687,Hunger,2008,7.6,0,1,0,0,0,1,M
+688,Jumper,2008,6.1,0,1,0,0,1,0,M
+689,Toy Story 3,2010,8.3,1,0,0,0,1,0,M
+690,Tinker Tailor Soldier Spy,2011,7.1,0,1,0,1,1,0,M
+691,Resident Evil: Retribution,2012,5.4,0,1,0,1,1,0,M
+692,Dear Zindagi,2016,7.8,0,1,1,0,0,0,M
+693,Genius,2016,6.5,0,1,0,0,0,1,M
+694,Pompeii,2014,5.5,0,1,0,0,1,0,M
+695,Life of Pi,2012,7.9,0,1,0,0,1,0,M
+696,Hachi: A Dog's Tale,2009,8.1,0,1,0,0,0,0,M
+697,10 Years,2011,6.1,1,1,1,0,0,0,M
+698,I Origins,2014,7.3,0,1,1,0,0,0,M
+699,Live Free or Die Hard,2007,7.2,0,0,0,0,1,0,M
+700,The Matchbreaker,2016,5.5,1,0,1,0,0,0,M
+701,Funny Games,2007,6.5,0,1,0,1,0,0,M
+702,Ted,2012,7,1,1,0,0,0,0,M
+703,RED,2010,7.1,1,0,0,1,1,0,M
+704,Australia,2008,6.6,0,1,1,0,1,0,M
+705,Faster,2010,6.5,0,1,0,1,1,0,M
+706,The Neighbor,2016,5.8,0,0,0,1,1,0,M
+707,The Adjustment Bureau,2011,7.1,0,1,1,0,1,0,M
+708,The Hollars,2016,6.5,1,1,1,0,0,0,M
+709,The Judge,2014,7.4,0,1,0,1,0,0,M
+710,Closed Circuit,2013,6.2,0,1,0,1,0,0,M
+711,Transformers: Revenge of the Fallen,2009,6,0,1,0,0,1,0,M
+712,La tortue rouge,2016,7.6,1,1,0,0,0,0,M
+713,The Book of Life,2014,7.3,1,0,0,0,1,0,M
+714,Incendies,2010,8.2,0,1,0,1,0,1,M
+715,The Heartbreak Kid,2007,5.8,1,0,1,0,0,0,M
+716,Happy Feet,2006,6.5,1,0,0,0,0,0,M
+717,Entourage,2015,6.6,1,0,0,0,0,0,M
+718,The Strangers,2008,6.2,0,0,0,1,1,0,M
+719,Noah,2014,5.8,0,1,0,0,1,0,M
+720,Neighbors,2014,6.4,1,0,0,0,0,0,M
+721,Nymphomaniac: Vol. II,2013,6.7,0,1,0,0,0,0,M
+722,Wild,2014,7.1,0,1,0,0,1,1,M
+723,Grown Ups,2010,6,1,0,0,0,0,0,M
+724,Blair Witch,2016,5.1,0,0,0,1,1,0,M
+725,The Karate Kid,2010,6.2,0,1,0,0,1,0,M
+726,Dark Shadows,2012,6.2,1,1,0,1,0,0,M
+727,Friends with Benefits,2011,6.6,1,0,1,0,0,0,M
+728,The Illusionist,2006,7.6,0,1,1,1,0,0,M
+729,The A-Team,2010,6.8,1,0,0,0,1,0,M
+730,The Guest,2014,6.7,0,0,0,0,1,0,M
+731,The Internship,2013,6.3,1,0,0,0,0,0,M
+732,Paul,2011,7,1,1,0,0,1,0,M
+733,This Beautiful Fantastic,2016,6.9,1,1,0,0,0,0,M
+734,The Da Vinci Code,2006,6.6,0,0,0,1,1,0,M
+735,Mr. Church,2016,7.7,1,1,0,0,0,0,M
+736,Hugo,2011,7.5,0,1,0,0,1,0,M
+737,The Blackcoat's Daughter,2015,5.6,0,0,0,1,1,0,M
+738,Body of Lies,2008,7.1,0,1,1,0,1,0,M
+739,Knight of Cups,2015,5.7,0,1,1,0,0,0,M
+740,The Mummy: Tomb of the Dragon Emperor,2008,5.2,0,1,0,0,1,0,M
+741,The Boss,2016,5.4,1,0,0,0,0,0,M
+742,Hands of Stone,2016,6.6,0,1,0,0,1,1,M
+743,El secreto de sus ojos,2009,8.2,0,1,1,1,0,0,M
+744,True Grit,2010,7.6,0,1,0,0,1,0,M
+745,We Are Your Friends,2015,6.2,0,1,1,0,0,1,M
+746,A Million Ways to Die in the West,2014,6.1,1,0,1,0,1,0,M
+747,Only for One Night,2016,4.6,0,0,0,0,1,0,M
+748,Rules Don't Apply,2016,5.7,1,1,1,0,0,0,M
+749,Ouija: Origin of Evil,2016,6.1,0,0,0,1,1,0,M
+750,Percy Jackson: Sea of Monsters,2013,5.9,0,1,0,0,1,0,M
+751,Fracture,2007,7.2,0,1,0,1,0,0,M
+752,Oculus,2013,6.5,0,0,0,1,0,0,M
+753,In Bruges,2008,7.9,1,1,0,1,0,0,M
+754,This Means War,2012,6.3,1,0,1,0,1,0,M
+755,LÃƒÂ­da BaarovÃƒÂ¡,2016,5,0,1,0,0,0,1,M
+756,The Road,2009,7.3,0,1,0,0,1,0,M
+757,Lavender,2016,5.2,0,1,0,0,1,0,M
+758,Deuces,2016,6.6,0,1,0,0,0,0,M
+759,Conan the Barbarian,2011,5.2,0,1,0,0,1,0,M
+760,The Fighter,2010,7.8,0,1,0,0,1,1,M
+761,August Rush,2007,7.5,0,1,0,0,0,1,M
+762,Chef,2014,7.3,1,1,0,0,0,0,M
+763,Eye in the Sky,2015,7.3,0,1,0,0,1,1,M
+764,Eagle Eye,2008,6.6,0,0,0,1,1,0,M
+765,The Purge,2013,5.7,0,1,0,1,1,0,M
+766,PK,2014,8.2,1,1,1,0,0,0,M
+767,Ender's Game,2013,6.7,0,1,0,0,1,0,M
+768,Indiana Jones and the Kingdom of the Crystal Skull,2008,6.2,0,1,0,0,1,0,M
+769,Paper Towns,2015,6.3,0,1,1,1,0,0,M
+770,High-Rise,2015,5.7,0,1,0,0,0,0,M
+771,Quantum of Solace,2008,6.6,0,0,0,0,1,0,M
+772,The Assignment,2016,4.5,0,0,0,1,1,0,M
+773,How to Train Your Dragon,2010,8.1,1,0,0,0,1,0,M
+774,Lady in the Water,2006,5.6,0,1,0,1,0,0,M
+775,The Fountain,2006,7.3,0,1,0,0,0,0,M
+776,Cars 2,2011,6.2,1,0,0,0,1,0,M
+777,31,2016,5.1,0,0,0,1,1,0,M
+778,Final Girl,2015,4.7,0,0,0,0,1,0,M
+779,Chalk It Up,2016,4.8,1,0,0,0,0,0,M
+780,The Man Who Knew Infinity,2015,7.2,0,1,0,0,0,1,M
+781,Unknown,2011,6.9,0,0,0,1,1,0,M
+782,Self/less,2015,6.5,0,1,0,1,1,0,M
+783,Mr. Brooks,2007,7.3,0,1,0,1,1,0,M
+784,Tramps,2016,6.5,1,0,1,0,0,0,M
+785,Before We Go,2014,6.9,1,1,1,0,0,0,M
+786,Captain Phillips,2013,7.8,0,1,0,0,1,1,M
+787,The Secret Scripture,2016,6.8,0,1,0,0,0,0,M
+788,Max Steel,2016,4.6,0,0,0,0,1,0,M
+789,Hotel Transylvania 2,2015,6.7,1,0,0,0,0,0,M
+790,Hancock,2008,6.4,0,1,0,1,1,0,M
+791,Sisters,2015,6,1,0,0,0,0,0,M
+792,The Family,2013,6.3,1,0,0,1,1,0,M
+793,Zack and Miri Make a Porno,2008,6.6,1,0,1,0,0,0,M
+794,Ma vie de Courgette,2016,7.8,1,1,0,0,0,0,M
+795,Man on a Ledge,2012,6.6,0,0,0,1,1,0,M
+796,No Strings Attached,2011,6.2,1,0,1,0,0,0,M
+797,Rescue Dawn,2006,7.3,0,1,0,0,1,1,M
+798,Despicable Me 2,2013,7.4,1,0,0,0,1,0,M
+799,A Walk Among the Tombstones,2014,6.5,0,1,0,1,0,0,M
+800,The World's End,2013,7,1,1,0,0,1,0,M
+801,Yoga Hosers,2016,4.3,1,1,0,1,0,0,M
+802,Seven Psychopaths,2012,7.2,1,0,0,1,0,0,M
+803,Beowulf,2007,6.2,1,0,0,0,1,0,M
+804,Jack Ryan: Shadow Recruit,2014,6.2,0,1,0,0,1,0,M
+805,1408,2007,6.8,0,1,0,1,0,0,M
+806,The Gambler,2014,6,0,1,0,1,1,0,M
+807,Prince of Persia: The Sands of Time,2010,6.6,0,1,0,0,1,0,M
+808,The Spectacular Now,2013,7.1,1,1,1,0,0,0,M
+809,A United Kingdom,2016,6.8,0,1,1,0,0,1,M
+810,USS Indianapolis: Men of Courage,2016,5.2,0,1,0,0,1,1,M
+811,Turbo Kid,2015,6.7,1,0,0,0,1,0,M
+812,Mama,2013,6.2,0,0,0,1,1,0,M
+813,Orphan,2009,7,0,0,0,1,1,0,M
+814,To Rome with Love,2012,6.3,1,0,1,0,0,0,M
+815,Fantastic Mr. Fox,2009,7.8,1,0,0,0,1,0,M
+816,Inside Man,2006,7.6,0,1,0,1,0,0,M
+817,I.T.,2016,5.4,0,1,0,1,0,0,M
+818,127 Hours,2010,7.6,0,1,0,0,1,1,M
+819,Annabelle,2014,5.4,0,0,0,1,1,0,M
+820,Wolves at the Door,2016,4.6,0,0,0,1,1,0,M
+821,Suite FranÃƒÂ§aise,2014,6.9,0,1,1,0,0,1,M
+822,The Imaginarium of Doctor Parnassus,2009,6.8,0,1,0,1,1,0,M
+823,G.I. Joe: The Rise of Cobra,2009,5.8,0,1,0,0,1,0,M
+824,Christine,2016,7,0,1,0,0,0,1,M
+825,Man Down,2015,5.8,0,1,0,0,1,0,M
+826,Crawlspace,2016,5.3,0,0,0,1,1,0,M
+827,Shut In,2016,4.6,0,1,0,1,1,0,M
+828,The Warriors Gate,2016,5.3,0,1,0,0,1,0,M
+829,Grindhouse,2007,7.6,0,0,0,1,1,0,M
+830,Disaster Movie,2008,1.9,1,0,0,0,0,0,M
+831,Rocky Balboa,2006,7.2,0,1,0,0,0,1,M
+832,Diary of a Wimpy Kid: Dog Days,2012,6.4,1,0,0,0,0,0,M
+833,Jane Eyre,2011,7.4,0,1,1,0,0,0,M
+834,Fool's Gold,2008,5.7,1,0,0,0,1,0,M
+835,The Dictator,2012,6.4,1,0,0,0,0,0,M
+836,The Loft,2014,6.3,0,0,1,1,1,0,M
+837,Bacalaureat,2016,7.5,0,1,0,1,0,0,M
+838,You Don't Mess with the Zohan,2008,5.5,1,0,0,0,1,0,M
+839,Exposed,2016,4.2,0,1,0,1,0,0,M
+840,Maudie,2016,7.8,0,1,1,0,0,1,M
+841,Horrible Bosses 2,2014,6.3,1,0,0,1,0,0,M
+842,A Bigger Splash,2015,6.4,0,1,0,0,1,0,M
+843,Melancholia,2011,7.1,0,1,0,0,0,0,M
+844,The Princess and the Frog,2009,7.1,1,0,0,0,1,0,M
+845,Unstoppable,2010,6.8,0,0,0,0,1,0,M
+846,Flight,2012,7.3,0,1,0,0,1,0,M
+847,Home,2015,6.7,1,0,0,0,1,0,M
+848,La migliore offerta,2013,7.8,0,1,0,1,0,0,M
+849,Mean Dreams,2016,6.3,0,0,0,0,1,0,M
+850,42,2013,7.5,0,1,0,0,0,1,M
+851,21,2008,6.8,0,1,0,1,1,0,M
+852,Begin Again,2013,7.4,0,1,0,0,0,1,M
+853,Out of the Furnace,2013,6.8,0,1,0,1,1,0,M
+854,Vicky Cristina Barcelona,2008,7.1,0,1,1,0,0,0,M
+855,Kung Fu Panda,2008,7.6,1,0,0,0,1,0,M
+856,Barbershop: The Next Cut,2016,5.9,1,1,0,0,0,0,M
+857,Terminator Salvation,2009,6.6,0,1,0,0,1,0,M
+858,Freedom Writers,2007,7.5,0,1,0,1,0,1,M
+859,The Hills Have Eyes,2006,6.4,0,0,0,1,0,0,M
+860,Changeling,2008,7.8,0,1,0,1,0,1,M
+861,Remember Me,2010,7.2,0,1,1,0,0,0,M
+862,Koe no katachi,2016,8.4,1,1,1,0,0,0,M
+863,"Alexander and the Terrible, Horrible, No Good, Very Bad Day",2014,6.2,1,0,0,0,0,0,M
+864,Locke,2013,7.1,0,1,0,0,0,0,M
+865,The 9th Life of Louis Drax,2016,6.3,0,0,0,1,1,0,M
+866,Horns,2013,6.5,0,1,0,1,0,0,M
+867,Indignation,2016,6.9,0,1,1,0,0,0,M
+868,The Stanford Prison Experiment,2015,6.9,0,1,0,0,0,1,M
+869,Diary of a Wimpy Kid: Rodrick Rules,2011,6.6,1,0,0,0,0,0,M
+870,Mission: Impossible III,2006,6.9,0,0,0,0,1,0,M
+871,En man som heter Ove,2015,7.7,1,1,0,0,0,0,M
+872,Dragonball Evolution,2009,2.7,0,1,0,0,1,0,M
+873,Red Dawn,2012,5.4,0,0,0,0,1,0,M
+874,One Day,2011,7,0,1,1,0,0,0,M
+875,Life as We Know It,2010,6.6,1,1,1,0,0,0,M
+876,28 Weeks Later,2007,7,0,1,0,1,0,0,M
+877,Warm Bodies,2013,6.9,1,0,1,1,0,0,M
+878,Blue Jasmine,2013,7.3,0,1,0,0,0,0,M
+879,G.I. Joe: Retaliation,2013,5.8,0,1,0,0,1,0,M
+880,Wrath of the Titans,2012,5.8,0,1,0,0,1,0,M
+881,Shin Gojira,2016,6.9,0,1,0,0,1,0,M
+882,Saving Mr. Banks,2013,7.5,1,1,0,0,0,1,M
+883,Transcendence,2014,6.3,0,1,1,1,0,0,M
+884,Rio,2011,6.9,1,0,0,0,1,0,M
+885,Equals,2015,6.1,0,1,1,0,0,0,M
+886,Babel,2006,7.5,0,1,0,0,0,0,M
+887,The Tree of Life,2011,6.8,0,1,0,0,0,0,M
+888,The Lucky One,2012,6.5,0,1,1,0,0,0,M
+889,Piranha 3D,2010,5.5,1,0,0,1,1,0,M
+890,50/50,2011,7.7,1,1,1,0,0,0,M
+891,The Intent,2016,3.5,0,1,0,1,0,0,M
+892,This Is 40,2012,6.2,1,0,1,0,0,0,M
+893,Real Steel,2011,7.1,0,1,0,0,1,0,M
+894,Sex and the City,2008,5.5,1,1,1,0,0,0,M
+895,Rambo,2008,7.1,0,0,0,0,1,1,M
+896,Planet Terror,2007,7.1,1,0,0,1,1,0,M
+897,Concussion,2015,7.1,0,1,0,0,0,1,M
+898,The Fall,2006,7.9,1,1,0,0,1,0,M
+899,The Ugly Truth,2009,6.5,1,0,1,0,0,0,M
+900,Bride Wars,2009,5.5,1,0,1,0,0,0,M
+901,Sleeping with Other People,2015,6.5,1,1,1,0,0,0,M
+902,Snakes on a Plane,2006,5.6,0,0,0,1,1,0,M
+903,What If,2013,6.8,1,0,1,0,0,0,M
+904,How to Train Your Dragon 2,2014,7.9,1,0,0,0,1,0,M
+905,RoboCop,2014,6.2,0,1,0,1,1,0,M
+906,In Dubious Battle,2016,6.2,0,1,0,0,0,0,M
+907,"Hello, My Name Is Doris",2015,6.7,1,1,1,0,0,0,M
+908,Ocean's Thirteen,2007,6.9,0,0,0,1,1,0,M
+909,Slither,2006,6.5,1,1,0,1,0,0,M
+910,Contagion,2011,6.6,0,1,0,0,1,0,M
+911,Il racconto dei racconti - Tale of Tales,2015,6.4,0,1,0,1,0,0,M
+912,I Am the Pretty Thing That Lives in the House,2016,4.7,0,0,0,0,1,0,M
+913,Bridge to Terabithia,2007,7.2,0,1,0,0,1,0,M
+914,Coherence,2013,7.2,0,1,0,1,1,0,M
+915,Notorious,2009,6.7,0,1,0,1,0,1,M
+916,Goksung,2016,7.5,0,1,0,1,0,0,M
+917,The Expendables 2,2012,6.6,0,0,0,0,1,0,M
+918,The Girl Next Door,2007,6.7,0,1,0,1,0,0,M
+919,Perfume: The Story of a Murderer,2006,7.5,0,1,0,1,0,0,M
+920,The Golden Compass,2007,6.1,0,1,0,0,1,0,M
+921,Centurion,2010,6.4,0,1,0,0,1,0,M
+922,Scouts Guide to the Zombie Apocalypse,2015,6.3,1,0,0,1,1,0,M
+923,17 Again,2009,6.4,1,1,0,0,0,0,M
+924,No Escape,2015,6.8,0,0,0,0,1,0,M
+925,Superman Returns,2006,6.1,0,1,0,0,1,0,M
+926,The Twilight Saga: Breaking Dawn - Part 1,2011,4.9,0,1,0,0,1,0,M
+927,Precious,2009,7.3,0,1,0,0,0,0,M
+928,The Sea of Trees,2015,5.9,0,1,0,0,0,0,M
+929,Good Kids,2016,6.1,1,0,0,0,0,0,M
+930,The Master,2012,7.1,0,1,0,0,0,0,M
+931,Footloose,2011,5.9,1,1,0,0,0,1,M
+932,If I Stay,2014,6.8,0,1,0,0,0,1,M
+933,The Ticket,2016,5.4,0,1,0,0,0,0,M
+934,Detour,2016,6.3,0,0,0,0,1,0,M
+935,The Love Witch,2016,6.2,1,0,0,1,0,0,M
+936,Talladega Nights: The Ballad of Ricky Bobby,2006,6.6,1,0,0,0,1,1,M
+937,The Human Centipede (First Sequence),2009,4.4,0,0,0,1,0,0,M
+938,Super,2010,6.8,1,1,0,0,0,0,M
+939,The Siege of Jadotville,2016,7.3,0,1,0,0,1,0,M
+940,Up in the Air,2009,7.4,0,1,1,0,0,0,M
+941,The Midnight Meat Train,2008,6.1,0,0,0,1,0,0,M
+942,The Twilight Saga: Eclipse,2010,4.9,0,1,0,0,1,0,M
+943,Transpecos,2016,5.8,0,0,0,0,1,0,M
+944,What's Your Number?,2011,6.1,1,0,1,0,0,0,M
+945,Riddick,2013,6.4,0,1,0,0,1,0,M
+946,Triangle,2009,6.9,0,1,0,1,1,0,M
+947,The Butler,2013,7.2,0,1,0,0,0,1,M
+948,King Cobra,2016,5.6,0,1,0,1,0,0,M
+949,After Earth,2013,4.9,0,1,0,0,1,0,M
+950,Kicks,2016,6.1,0,0,0,0,1,0,M
+951,Me and Earl and the Dying Girl,2015,7.8,1,1,0,0,0,0,M
+952,The Descendants,2011,7.3,1,1,0,0,0,0,M
+953,Sex and the City 2,2010,4.3,1,1,1,0,0,0,M
+954,The Kings of Summer,2013,7.2,1,1,0,0,1,0,M
+955,Death Race,2008,6.4,0,1,0,0,1,0,M
+956,That Awkward Moment,2014,6.2,1,0,1,0,0,0,M
+957,Legion,2010,5.2,0,1,0,1,1,0,M
+958,End of Watch,2012,7.7,0,1,0,1,1,0,M
+959,3 Days to Kill,2014,6.2,0,1,0,0,1,0,M
+960,Lucky Number Slevin,2006,7.8,0,1,0,1,0,0,M
+961,Trance,2013,7,0,1,0,1,0,0,M
+962,Into the Forest,2015,5.9,0,1,0,0,1,0,M
+963,The Other Boleyn Girl,2008,6.7,0,1,0,0,0,1,M
+964,I Spit on Your Grave,2010,6.3,0,0,0,1,1,0,M
+965,Custody,2016,6.9,0,1,0,0,0,0,M
+966,Inland Empire,2006,7,0,1,0,1,1,0,M
+967,L'odyssÃƒÂ©e,2016,6.7,0,0,0,0,1,1,M
+968,The Walk,2015,7.3,0,0,0,1,1,1,M
+969,Wrecker,2015,3.5,0,0,0,1,1,0,M
+970,The Lone Ranger,2013,6.5,0,0,0,0,1,0,M
+971,Texas Chainsaw 3D,2013,4.8,0,0,0,1,1,0,M
+972,Disturbia,2007,6.9,0,1,0,1,1,0,M
+973,Rock of Ages,2012,5.9,1,1,0,0,0,1,M
+974,Scream 4,2011,6.2,0,0,0,1,0,0,M
+975,Queen of Katwe,2016,7.4,0,1,0,0,0,1,M
+976,My Big Fat Greek Wedding 2,2016,6,1,0,1,0,0,0,M
+977,Dark Places,2015,6.2,0,1,0,1,1,0,M
+978,Amateur Night,2016,5,1,0,0,0,0,0,M
+979,It's Only the End of the World,2016,7,0,1,0,0,0,0,M
+980,The Skin I Live In,2011,7.6,0,1,0,0,1,0,M
+981,Miracles from Heaven,2016,7,0,1,0,0,0,1,M
+982,Annie,2014,5.3,1,1,0,0,0,0,M
+983,Across the Universe,2007,7.4,0,1,0,0,0,1,M
+984,Let's Be Cops,2014,6.5,1,0,0,0,0,0,M
+985,Max,2015,6.8,0,0,0,0,1,0,M
+986,Your Highness,2011,5.6,1,1,0,0,1,0,M
+987,Final Destination 5,2011,5.9,0,0,0,1,1,0,M
+988,Endless Love,2014,6.3,0,1,1,0,0,0,M
+989,Martyrs,2008,7.1,0,0,0,1,0,0,M
+990,Selma,2014,7.5,0,1,0,0,0,1,M
+991,Underworld: Rise of the Lycans,2009,6.6,0,1,0,0,1,0,M
+992,Taare Zameen Par,2007,8.5,0,1,0,0,0,1,M
+993,Take Me Home Tonight,2011,6.3,1,1,1,0,0,0,M
+994,Resident Evil: Afterlife,2010,5.9,0,0,0,1,1,0,M
+995,Project X,2012,6.7,1,0,0,0,0,0,M
+996,Secret in Their Eyes,2015,6.2,0,1,0,1,0,0,M
+997,Hostel: Part II,2007,5.5,0,0,0,1,0,0,M
+998,Step Up 2: The Streets,2008,6.2,0,1,1,0,0,1,M
+999,Search Party,2014,5.6,1,0,0,0,1,0,M
+1000,Nine Lives,2016,5.3,1,1,0,0,0,0,M
