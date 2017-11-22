@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movie Recommendations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="bootstrap-slider.css" rel="stylesheet">
+  <script src="bootstrap-slider.js"></script>
+</head>
+<body>
+  
+<div class="container">
+  <h1>Let's define your personality!</h1>
+  <p>Rate the following personality traits.</p>  
+  <br>
+<!-- <div class="row">   -->
+  <div class="row">
+    <div class="col-sm-4">Openness</div>
+    <div class="col-sm-8">
+      <div class="range">
+
+        <input type="range" name="range" min="0" max="100" value="50" step="10" onchange="range.value=value" id="o">
+        <output id="range">50</output>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">Conscientiousness</div>
+    <div class="col-sm-8">
+            <div class="range range-primary">
+
+        <input type="range" name="range" min="0" max="100" value="50" step="10" onchange="rangePrimary.value=value" id="c">
+        <output id="rangePrimary">50</output>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">Extraversion</div>
+    <div class="col-sm-8">
+
+        <div class="range range-success">
+            <input type="range" name="range" min="0" max="100" value="50" step="10" onchange="rangeSuccess.value=value" id="e">
+            <output id="rangeSuccess">50</output>
+        </div>
+    </div>
+  </div>
+    <div class="row">
+    <div class="col-sm-4">Agreeableness</div>
+    <div class="col-sm-8">
+          <div class="range range-info">
+            <input type="range" name="range" min="0" max="100" value="50" step="10" onchange="rangeInfo.value=value" id="a">
+            <output id="rangeInfo">50</output>
+          </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">Neuroticism</div>
+    <div class="col-sm-8">
+          <div class="range range-warning">
+            <input type="range" name="range" min="0" max="100" value="50" step="10" onchange="rangeWarning.value=value" id="n">
+            <output id="rangeWarning">50</output>
+          </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">Nerdiness</div>
+    <div class="col-sm-8">
+          <div class="range range-danger">
+            <input type="range" name="range" min="0" max="100" value="50" step="10" onchange="rangeDanger.value=value" id="nerd">
+            <output id="rangeDanger">50</output>
+          </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <div class = "row">
+    <div class = "col-sm-12">
+      <button type="button" class="btn btn-primary btn-block" onclick="myFunction()">Submit</button>
+    </div> 
+  </div>
+  <br>
+  <br>
+  <p> From here we will match your personality to a genre. Taking your personality ratings as a vector we will compute the dot product with the personality dimensions of fans of various genres and return the highest value as your top ranked genre.</p>
+  <br>
+  <div class="row">
+    <div class = "col-sm-6">
+      User Personality Vector:
+      <<label for "openness" id="open"> 0 </label>, 
+      <label for "conscientiousness" id="con"> 0 </label>, 
+      <label for "extroversion" id="ex"> 0 </label>, 
+      <label for "agreeableness" id="agree"> 0 </label>, 
+      <label for "neuroticism" id="neuro"> 0 </label>, 
+      <label for "nerdiness" id="non"> 0 </label>>.
+    </div>
+    <div class="col-sm-6">
+      Personality Dimensions by Genre: 
+
+    </div>
+</div>
+
+  <script  src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<script>
+function myFunction() {
+    document.getElementById("open").innerHTML = document.getElementById("o").value;
+    document.getElementById("con").innerHTML = document.getElementById("c").value;
+    document.getElementById("ex").innerHTML = document.getElementById("e").value;
+    document.getElementById("agree").innerHTML = document.getElementById("a").value;
+    document.getElementById("neuro").innerHTML = document.getElementById("n").value;
+    document.getElementById("non").innerHTML = document.getElementById("nerd").value;
+}
+</script>
+
+
+</body>
+</html>

@@ -1,29 +1,38 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10"
+     xml:base="urn:absolute:video"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10">
-    <Prefix name="" IRI="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10"/>
+     ontologyIRI="urn:absolute:video">
+    <Prefix name="" IRI="urn:absolute:video"/>
+    <Prefix name="dom" IRI="http://dbpedia.org/ontology/Film"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="schema" IRI="http://dbpedia.org/ontology/Work"/>
     <Prefix name="untitled-ontology-10" IRI="http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10#"/>
+    <Import>http://dbpedia.org/ontology/Work</Import>
+    <Import>http://dbpedia.org/ontology/Film</Import>
+    <Import>http://xmlns.com/foaf/0.1/</Import>
     <Declaration>
-        <DataProperty IRI="#title"/>
+        <NamedIndividual IRI="#GuardiansoftheGalaxy"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#non-fiction"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Media"/>
+        <DataProperty IRI="#romance"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#romance"/>
+        <DataProperty IRI="#fantasy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#homepage"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#action"/>
@@ -35,80 +44,85 @@
         <DataProperty IRI="#comedy"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#type"/>
+        <DataProperty IRI="#title"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#horror"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#fantasy"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasGenre"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#homepage"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Genre"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#GuardiansOfTheGalaxy"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#year"/>
     </Declaration>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasGenre"/>
-        <Class IRI="#Media"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasGenre"/>
-        <Class IRI="#Genre"/>
-    </ObjectPropertyRange>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fantasy"/>
+        <NamedIndividual IRI="#GuardiansoftheGalaxy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#horror"/>
+        <NamedIndividual IRI="#GuardiansoftheGalaxy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#popularity"/>
+        <NamedIndividual IRI="#GuardiansoftheGalaxy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#type"/>
+        <NamedIndividual IRI="#GuardiansoftheGalaxy"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Movie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#year"/>
+        <NamedIndividual IRI="#GuardiansoftheGalaxy"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2014</Literal>
+    </DataPropertyAssertion>
     <DataPropertyDomain>
         <DataProperty IRI="#action"/>
-        <Class IRI="#Genre"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#comedy"/>
-        <Class IRI="#Genre"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#fantasy"/>
-        <Class IRI="#Genre"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#homepage"/>
-        <Class IRI="#Media"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#horror"/>
-        <Class IRI="#Genre"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#non-fiction"/>
-        <Class IRI="#Genre"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#popularity"/>
-        <Class IRI="#Media"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#romance"/>
-        <Class IRI="#Genre"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#title"/>
-        <Class IRI="#Media"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#type"/>
-        <Class IRI="#Media"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#year"/>
-        <Class IRI="#Media"/>
+        <Class IRI="http://dbpedia.org/ontology/Film"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#action"/>

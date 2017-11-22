@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://xmlns.com/foaf/0.1/" uri="http://xmlns.com/foaf/spec/"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1510959561117" name="http://www.owl-ontologies.com/generations.owl" uri="family_example.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1510959561117" name="duplicate:http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10" uri="csci586.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1510959561117" name="duplicate:http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10" uri="finalontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1510959561117" name="duplicate:http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10" uri="malvika_nagpal.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1510959561117" name="duplicate:http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10" uri="temp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510975178339" name="http://www.owl-ontologies.com/generations.owl" uri="family_example.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510975178339" name="duplicate:http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10" uri="csci586.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510975178339" name="duplicate:http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10" uri="malvika_nagpal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510975178339" name="duplicate:http://www.semanticweb.org/curo/ontologies/2017/10/untitled-ontology-10" uri="temp.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1510975178339" name="urn:absolute:video" uri="finalontology.owl"/>
     </group>
 </catalog>
