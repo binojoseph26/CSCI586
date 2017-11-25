@@ -1,0 +1,928 @@
+<head>
+  <!-- Plotly.js -->
+  <!--
+  
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+    <link rel="stylesheet" href="/Users/nikitagupta/Desktop/test_html.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.4/quill.js"></script>
+    <link href="https://cdn.quilljs.com/1.3.4/quill.snow.css" rel="stylesheet">
+</head>
+
+<body>
+<script>
+
+$(document).ready(function() {
+		$('#results').hide();
+		getDefaultSelectedCheckbox();
+});
+
+
+var $table_movies = $('#table_movies');
+var mydata_movies = 
+[
+    {
+        "movie": 0,
+        "rating": "test0",
+        "thumbnail": "$0"
+    },
+    {
+        "movie": 1,
+        "rating": "test1",
+        "thumbnail": "$1"
+    },
+    {
+        "movie": 2,
+        "rating": "test2",
+        "thumbnail": "$2"
+    },
+    {
+        "movie": 3,
+        "rating": "test3",
+        "thumbnail": "$3"
+    },
+    {
+        "movie": 4,
+        "rating": "test4",
+        "thumbnail": "$4"
+    },
+    {
+        "movie": 5,
+        "rating": "test5",
+        "thumbnail": "$5"
+    },
+    {
+        "movie": 6,
+        "rating": "test6",
+        "thumbnail": "$6"
+    },
+    {
+        "movie": 7,
+        "rating": "test7",
+        "thumbnail": "$7"
+    },
+    {
+        "movie": 8,
+        "rating": "test8",
+        "thumbnail": "$8"
+    },
+    {
+        "movie": 9,
+        "rating": "test9",
+        "thumbnail": "$9"
+    },
+    {
+        "movie": 10,
+        "rating": "test10",
+        "thumbnail": "$10"
+    },
+    {
+        "movie": 11,
+        "rating": "test11",
+        "thumbnail": "$11"
+    },
+    {
+        "movie": 12,
+        "rating": "test12",
+        "thumbnail": "$12"
+    },
+    {
+        "movie": 13,
+        "rating": "test13",
+        "thumbnail": "$13"
+    },
+    {
+        "movie": 14,
+        "rating": "test14",
+        "thumbnail": "$14"
+    },
+    {
+        "movie": 15,
+        "rating": "test15",
+        "thumbnail": "$15"
+    },
+    {
+        "movie": 16,
+        "rating": "test16",
+        "thumbnail": "$16"
+    },
+    {
+        "movie": 17,
+        "rating": "test17",
+        "thumbnail": "$17"
+    },
+    {
+        "movie": 18,
+        "rating": "test18",
+        "thumbnail": "$18"
+    },
+    {
+        "movie": 19,
+        "rating": "test19",
+        "thumbnail": "$19"
+    },
+    {
+        "movie": 20,
+        "rating": "test20",
+        "thumbnail": "$20"
+    }
+];
+
+$(function () {
+    $('#table_movies').bootstrapTable({
+        data: mydata_movies
+    });
+});
+
+
+var $table_videos = $('#table_videos');
+var mydata_videos = 
+[
+    {
+        "video": 0,
+        "rating": "test0",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 1,
+        "rating": "test1",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 2,
+        "rating": "test2",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 3,
+        "rating": "test3",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 4,
+        "rating": "test4",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 5,
+        "rating": "test5",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 6,
+        "rating": "test6",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 7,
+        "rating": "test7",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 8,
+        "rating": "test8",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 9,
+        "rating": "test9",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 10,
+        "rating": "test10",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 11,
+        "rating": "test11",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 12,
+        "rating": "test12",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 13,
+        "rating": "test13",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 14,
+        "rating": "test14",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 15,
+        "rating": "test15",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 16,
+        "rating": "test16",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 17,
+        "rating": "test17",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 18,
+        "rating": "test18",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 19,
+        "rating": "test19",
+        "thumbnail": "http://lorempixel.com/400/400"
+    },
+    {
+        "video": 20,
+        "rating": "test20",
+        "thumbnail": "http://lorempixel.com/400/400"
+    }
+];
+
+$(function () {
+    $('#table_videos').bootstrapTable({
+        data: mydata_videos
+    });
+});
+ 
+  	$(function () {
+    $('.button-checkbox').each(function () {
+
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'glyphicon glyphicon-check'
+                },
+                off: {
+                    icon: 'glyphicon glyphicon-unchecked'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-default')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color + ' active')
+                    .addClass('btn-default');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+
+
+function sendSliderValues(val1,val2,val3,val4,val5,val6) {
+
+	alert(val1 + val2 + val3 + val4 + val5 + val6);
+	$('#results').show();	
+}
+
+function getDefaultSelectedCheckbox() {
+
+   var array = ['Non-Fiction', 'Fantasy', 'Romance', 'Horror', 'Action', 'Comedy'];
+   switch(array[0].toLowerCase()) {
+    case "comedy":
+        $('#comedy').prop('checked','true');
+        break;
+    case "action":
+        $('#action').prop('checked','true');
+        break;
+    case "horror":
+        $('#horror').prop('checked','true');
+        break;
+    case "romance":
+        $('#romance').prop('checked','true');
+        break;
+    case "fantasy":
+        $('#fantasy').prop('checked','true');
+        break;
+    case "non-fiction":
+        $('#non-fiction').prop('checked','true');
+        break;
+    default:
+        break;
+	}
+}
+
+function getSelectedGenreData() {
+
+	var selectedCheckBox = [];
+	$('.button-checkbox').each(function () {
+		 var $widget = $(this),
+		     $checkbox = $widget.find('input:checkbox');
+
+		 var isChecked = $checkbox.is(':checked');
+		 if(isChecked) {
+		 	selectedCheckBox.push($checkbox.prop('id'));
+		 }
+	});
+	alert(selectedCheckBox);
+}
+
+function getQueryResult() {
+
+	var data = {
+    "data": {
+        "x": "1",
+        "y": "1",
+        "url": "http://url.com"
+    },
+    "event": "start",
+    "show": 1,
+    "id": 50
+}
+
+document.getElementById("json").innerHTML = JSON.stringify(data, undefined, 2)
+
+}
+
+function genDivs() { 
+	  /*console.log("Hello I am here");
+
+	  var data = {
+  "images": [{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  },{
+    "bannerImg1": "http://i.stack.imgur.com/HXS1E.png?s=32&g=1"
+  },
+  {"bannerImg1" : "http://i.stack.imgur.com/8ywqe.png?s=32&g=1"
+  }]
+};	
+document.getElementById("img-container").innerHTML = "";
+data.images.forEach( function(obj) {
+  var img = new Image();
+  img.src = obj.bannerImg1;
+  img.setAttribute("class", "banner-img");
+  img.setAttribute("alt", "effy");
+  img.setAttribute("height", "300px");
+  img.setAttribute("width", "300px");
+
+  document.getElementById("img-container").appendChild(img);
+});*/
+
+var images= [
+    'http://lorempixel.com/400/400',
+    'http://lorempixel.com/600/600',
+    'http://lorempixel.com/800/800',
+    'http://lorempixel.com/1000/1000',
+    'http://lorempixel.com/400/400',
+    'http://lorempixel.com/600/600',
+    'http://lorempixel.com/800/800',
+    'http://lorempixel.com/1000/1000',
+    'http://lorempixel.com/400/400',
+    'http://lorempixel.com/600/600',
+    'http://lorempixel.com/800/800',
+    'http://lorempixel.com/1000/1000',
+    'http://lorempixel.com/400/400',
+    'http://lorempixel.com/600/600',
+    'http://lorempixel.com/800/800',
+    'http://lorempixel.com/1000/1000',
+    'http://lorempixel.com/400/400',
+    'http://lorempixel.com/600/600',
+    'http://lorempixel.com/800/800',
+    'http://lorempixel.com/1000/1000'
+];
+    
+var $list = $('#imagesList');
+
+$.each(images, function(i, src) {
+    var $li = $('<li class="loading">').appendTo($list);
+    
+    $('<img>').appendTo($li).one('load', function() {
+        $li.removeClass('loading');
+    }).attr('src', src);
+});
+	  
+}
+
+</script>
+
+ <!--<div class="container">-->
+<div class="customContainer">
+    <div class="page-header">
+        <h2> Movies/Videos Recommendation system based upon personality type :) </h2>
+    </div>
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="panel with-nav-tabs panel-primary">
+                <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1primary" data-toggle="tab">Primary 1</a></li>
+                            <li><a href="#tab2primary" data-toggle="tab">Primary 2</a></li>
+                            <li><a href="#tab3primary" data-toggle="tab">Primary 3</a></li>
+                            <li><a href="#tab4primary" data-toggle="tab">Primary 4</a></li>
+                            <li><a href="#tab5primary" data-toggle="tab">Primary 5</a></li>
+                        </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1primary">
+                        	<div id="myDiv_pie"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+                        	<div>
+						      <h2>Rate your personality traits!</h2>
+						      <hr/>
+
+						      <div class="row">
+						        <div class="col-xs-6">
+						          <h4>Openness</h4>
+						          <div class="range">
+						            <input type="range" name="range" min="1" max="100" value="50" onchange="range.value=value">
+						            <output id="range">50</output>
+						          </div>
+						        </div>
+						        <div class="col-xs-6">
+						        	<h4>Conscientiousness</h4>
+						          <div class="range range-primary">
+						            <input type="range" name="range" min="1" max="100" value="50" onchange="rangePrimary.value=value">
+						            <output id="rangePrimary">50</output>
+						          </div>
+						        </div>
+						      </div>
+
+						      <div class="row">
+						        <div class="col-xs-6">
+						          <h4>Extraversion</h4>
+						          <div class="range range-success">
+						            <input type="range" name="range" min="1" max="100" value="50" onchange="rangeSuccess.value=value">
+						            <output id="rangeSuccess">50</output>
+						          </div>
+						        </div>
+						        <div class="col-xs-6">	
+						          <h4>Agreeableness</h4>
+						          <div class="range range-info">
+						            <input type="range" name="range" min="1" max="100" value="50" onchange="rangeInfo.value=value">
+						            <output id="rangeInfo">50</output>
+						          </div>
+						        </div>
+						      </div>
+
+						      <div class="row">
+						        <div class="col-xs-6">
+						          <h4>Neuroticism</h4>
+						          <div class="range range-warning">
+						            <input type="range" name="range" min="1" max="100" value="50" onchange="rangeWarning.value=value">
+						            <output id="rangeWarning">50</output>
+						          </div>
+						        </div>
+						        <div class="col-xs-6">
+						          <h4>Nerd</h4>
+						          <div class="range range-danger">
+						            <input type="range" name="range" min="1" max="100" value="50" onchange="rangeDanger.value=value">
+						            <output id="rangeDanger">50</output>
+						          </div>
+						        </div>
+						      </div>
+
+						      <div align="center" style="margin-top: 20px;">
+						      	<button type="button" class="btn btn-primary" style="padding : 5px 20px 5px 20px;" 
+						      		onclick="sendSliderValues(range.value,rangePrimary.value,rangeSuccess.value,rangeInfo.value,rangeWarning.value,rangeDanger.value);">Submit</button>
+						      </div>
+
+						      </div>
+
+						    <div id="results" >
+						      <div>
+							      <h2>Movies & Videos recommended for you:</h2>
+							      <hr/>
+							      <div id="myDiv_horizontal_bar"></div>
+						  	  </div>
+
+							  	<div class="col-xs-2">
+								  	<span class="button-checkbox">
+								        <button type="button" class="btn" data-color="info" >Non-Fiction</button>
+								        <input type="checkbox" id="non-fiction" class="hidden" unchecked />
+								    </span>
+							  	</div>
+							  	<div class="col-xs-2">
+									<span class="button-checkbox">
+								        <button type="button" class="btn" data-color="info" >Fantasy</button>
+								        <input type="checkbox" id="fantasy" class="hidden" unchecked />
+								    </span>
+								</div>
+								<div class="col-xs-2">
+									<span class="button-checkbox">
+								        <button type="button" class="btn" data-color="info" >Romance</button>
+								        <input type="checkbox" id="romance" class="hidden" unchecked />
+								    </span>
+								</div>
+								<div class="col-xs-2">
+									<span class="button-checkbox">
+								        <button type="button" class="btn" data-color="info" >Horror</button>
+								        <input type="checkbox" id="horror" class="hidden" unchecked />
+								    </span>
+								</div>
+								<div class="col-xs-2">
+									<span class="button-checkbox">
+								        <button type="button" class="btn" data-color="info" >Action</button>
+								        <input type="checkbox" id="action" class="hidden" unchecked />
+								    </span>
+								</div>
+								<div class="col-xs-2">
+									<span class="button-checkbox">
+								        <button type="button" class="btn" data-color="info">Comedy</button>
+								        <input type="checkbox" id="comedy" class="hidden" unchecked  />
+								    </span>
+								</div>
+								<div class="row">
+									<div align="center" style="padding-top: 50px;">
+									    <button type="button" class="btn btn-success" onclick="getSelectedGenreData();">Submit Preferences</button>
+									</div>
+								</div>
+							    
+							 
+								  	<div class="col-xs-12">
+									  <h2>Related Movies:</h2>            
+									
+								        <table id="table_movies" class="table table-striped">
+									        <thead>
+									            <tr>
+									                <th data-field="movie">Movie</th>
+									                <th data-field="rating">Rating</th>
+									                <th data-field="thumbnail">Thumbnail</th>
+									            </tr>
+									        </thead>
+									    </table>
+									</div>
+								
+								
+									<!--<div class="col-xs-12">
+									  <h2>Related Videos:</h2>            
+									  <table id="table_videos" class="table table-striped" >
+									        <thead>
+									            <tr>
+									                <th data-field="video">Video</th>
+									                <th data-field="rating">Rating</th>
+									                <th data-field="thumbnail">Thumbnail</th>
+									            </tr>
+									        </thead>
+									    </table>
+									</div>-->
+							
+						
+						</div>
+                        	
+                        </div>	
+                        <div class="tab-pane fade" id="tab2primary">
+                        	
+						      <h2>Genre comparision in a Year!</h2>
+						      <hr/>
+						      <div align="center">
+						      		<div id="myDiv_vertical"><!-- Plotly chart will be drawn inside this DIV --></div>
+					      	  </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3primary">
+
+                        	<div class="row">
+									<div align="center" style="padding-top: 50px;">
+									    <button type="button" class="btn btn-success" onclick="genDivs();">Surprise Me!</button>
+									</div>
+									<!--<div class="banner-section" id="img-container"> </div>-->
+									
+							</div>
+
+							<!--<ul id="imagesList"></ul>-->
+
+							<div class="col-xs-12">
+									  <h2>Related Videos:</h2>            
+									  <table id="table_videos" class="table-bodered" data-classes="table table-hover table-condensed">
+									        <thead>
+									            <tr>
+									                <th data-field="video">Video</th>
+									                <th data-field="rating">Rating</th>
+									                <th data-field="thumbnail" data-formatter="imageFormatter">Thumbnail</th>
+									            </tr>
+									        </thead>
+									    </table>
+							</div>
+
+							<script>
+
+								    function imageFormatter(value, row) {
+								      return '<img src="'+value+'" />';
+								    }
+
+							</script>
+
+
+                        	
+                        </div>
+
+                        <div class="tab-pane fade" id="tab4primary">
+                        	<h2>Movies Vs Videos!</h2>
+						    <hr/>
+						    <div align="center">
+						      	<div id="myDiv_vertical2"><!-- Plotly chart will be drawn inside this DIV --></div>
+					    	</div>
+					    </div>
+                        
+                        <div class="tab-pane fade" id="tab5primary">
+                        	<!-- Create the toolbar container -->
+							<!-- Create the editor container -->
+									<div id="editor-container"></div>
+
+									<script type="text/javascript">
+										
+												  var quill = new Quill('#editor-container', {
+												  modules: {
+												    toolbar: [
+												      [{ header: [1, 2, false] }],
+												      ['bold', 'italic', 'underline'],
+												      ['image', 'code-block']
+												    ]
+												  },
+												  placeholder: 'Enter SPARQL Query...',
+												  theme: 'snow'  // or 'bubble'
+												});
+									</script>
+
+									<div align="center" style="padding-top: 50px;">
+									    <button type="button" class="btn btn-success" onclick="getQueryResult();">Submit Query</button>
+									</div>
+
+									<h2>Query Result...</h2>
+						            <hr/>
+						            <div class="row" style="padding : 5px 20px 5px 20px;" >
+						            	<pre id="json"></pre>
+						            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+
+<script>
+	    var data_pie = [{
+		  values: [72, 8, 5, 5, 5,5],   
+		  labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
+		  domain: {
+		    x: [0, .15]
+		  },
+		  name: 'Comedy',
+		  hoverinfo: 'label+percent',
+		  hole: .4,
+		  type: 'pie'
+		},{
+		  values: [41, 38, 3, 3, 12,3],
+		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
+		  text: 'Action',
+		  textposition: 'inside',
+		  domain: {x: [.17, .32]},
+		  name: 'Action',
+		  hoverinfo: 'label+percent',
+		  hole: .4,
+		  type: 'pie'
+		},
+		{
+		  values: [10, 12, 16, 21, 29,12], 
+		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
+		  text: 'Horror',
+		  textposition: 'inside',
+		  domain: {x: [.34, .49]},
+		  name: 'Horror',
+		  hoverinfo: 'label+percent',
+		  hole: .4,
+		  type: 'pie'
+		},
+		{
+		  values: [.5, 6, .5, .3, 2,.7],
+		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
+		  text: 'Romance',
+		  textposition: 'inside',
+		  domain: {x: [.51, .66]},
+		  name: 'Romance',
+		  hoverinfo: 'label+percent',
+		  hole: .4,
+		  type: 'pie'
+		},
+		{
+		  values: [191, 17, 142, 15, 19,16],   
+		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
+		  text: 'Fantasy',
+		  textposition: 'inside',
+		  domain: {x: [.68, .83]},
+		  name: 'Fantasy',
+		  hoverinfo: 'label+percent',
+		  hole: .4,
+		  type: 'pie'
+		},
+		{
+		  values: [.6,.4,.1,.7,.2,8],
+		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
+		  text: 'Non-Fiction',
+		  textposition: 'inside',
+		  domain: {x: [.85, 1]},
+		  name: 'Non-Fiction',
+		  hoverinfo: 'label+percent',
+		  hole: .4,
+		  type: 'pie'
+		}
+];
+
+var layout = {
+  title: 'Personality Type Characteristics'
+};
+
+Plotly.newPlot('myDiv_pie', data_pie, layout);
+
+// Rating
+var data_horizontal_bar = [{
+  type: 'bar',
+  x: [14, 20, 23, 25, 45, 50],
+  y: ['Comedy', 'Action', 'Horror', 'Romance', 'Fantasy', 'Non-Fiction'],
+  orientation: 'h',
+  marker: { color: ['red', 'green', 'blue', 'yellow', 'pink', 'orange'] }
+}];
+
+Plotly.newPlot('myDiv_horizontal_bar', data_horizontal_bar);
+
+// vertical bar chart
+var trace1 = {
+  x: ['2016', '2017', '2018'], 
+  y: [20, 14, 23], 
+  name: 'Action', 
+  type: 'bar'
+};
+
+var trace2 = {
+  x: ['2016', '2017', '2018'], 
+  y: [12, 18, 29], 
+  name: 'Comedy', 
+  type: 'bar'
+};
+
+var trace3 = {
+  x: ['2016', '2017', '2018'], 
+  y: [12, 18, 29], 
+  name: 'Non-Fiction', 
+  type: 'bar'
+};
+
+var trace4 = {
+  x: ['2016', '2017', '2018'], 
+  y: [12, 18, 29], 
+  name: 'Fantasy', 
+  type: 'bar'
+};
+
+var trace5 = {
+  x: ['2016', '2017', '2018'], 
+  y: [12, 18, 29], 
+  name: 'Romance', 
+  type: 'bar'
+};
+
+var trace6 = {
+  x: ['2016', '2017', '2018'], 
+  y: [12, 18, 29], 
+  name: 'Horror', 
+  type: 'bar'
+};
+
+var data_vertical = [trace1, trace2, trace3, trace4, trace5, trace6];
+var layout_vertical = {barmode: 'group'};
+
+Plotly.newPlot('myDiv_vertical', data_vertical, layout_vertical);
+
+
+// vertical bar chart
+var trace7 = {
+  x: ['Action', 'Comedy', 'Non-Fiction', 'Fantasy', 'Romance', 'Horror'], 
+  y: [20, 14, 23,90,65,70], 
+  name: 'Action', 
+  type: 'bar'
+};
+
+var trace8 = {
+  x: ['Action', 'Comedy', 'Non-Fiction', 'Fantasy', 'Romance', 'Horror'], 
+  y: [20, 10, 55, 78, 100, 45], 
+  name: 'Comedy', 
+  type: 'bar'
+};
+
+var data_vertical2 = [trace7, trace8];
+var layout_vertical2 = {barmode: 'group'};
+
+Plotly.newPlot('myDiv_vertical2', data_vertical2, layout_vertical2);
+
+
+</script>
+</body>
