@@ -265,7 +265,7 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
 body {
-    padding: 70px 0px;
+    padding: 0px 0px;
 }
 
 .range {
@@ -421,5 +421,9 @@ body {
 }
 .range.range-danger input[type="range"] {
     outline-color: rgb(217, 83, 79);
+}
+
+#editor-container {
+    height:400px;
 }
 

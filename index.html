@@ -1,271 +1,368 @@
 <head>
-  <!-- Plotly.js -->
-  <!--
-  
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
-    <link rel="stylesheet" href="/Users/nikitagupta/Desktop/test_html.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Users/binojoseph/Desktop/front-end/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.4/quill.js"></script>
+    <link href="https://cdn.quilljs.com/1.3.4/quill.snow.css" rel="stylesheet">
 </head>
 
 <body>
 <script>
 
+
+var opdata;
+var data_horizontal_bar;
 $(document).ready(function() {
 		$('#results').hide();
-		getDefaultSelectedCheckbox();
 });
 
+function getRestData(urlCall) {
+$.ajax({ 
+   type:"GET",
+   dataType: "jsonp",
+   jsonp: false ,
+   
+   cache :true,
+   url: urlCall,
+   jsonpCallback: "jsonpCallback",
+   success: function(data)
+   {
+    opdata=data;
+    var tds =  opdata.user_genre;
+    opdata.user_genre = tds.replace("[","").replace("]","").split(',');
+   
+   },
+   error: function(data)
+                        {
+                            alert("error");
+                        }
+}).done(function( datanew ) {
+    $('#table_movies').bootstrapTable({
+        data: datanew.movie_data
+        
+    });
+    $('#table_movies').bootstrapTable("load",datanew.movie_data);
+    $('#table_videos').bootstrapTable({
+        data: datanew.video_data
+        
+    });
+
+    $('#table_videos').bootstrapTable("load",datanew.video_data);
+
+    data_horizontal_bar = [{
+    type: 'bar',
+    x: [100, 80, 60, 40, 20, 10],
+    y: opdata.user_genre,
+    orientation: 'h',
+    marker: { color: ['red', 'green', 'blue', 'yellow', 'pink', 'orange'] }
+}];
+
+
+Plotly.newPlot('myDiv_horizontal_bar', data_horizontal_bar);
+
+  });;
+
+}
+
+function getRestData1(urlCall) {
+$.ajax({ 
+   type:"GET",
+   dataType: "jsonp",
+   jsonp: false ,
+   
+   cache :true,
+   url: urlCall,
+   jsonpCallback: "jsonpCallback",
+   success: function(data){
+
+    opdata=data;
+   
+   },
+   error: function(data)
+                        {
+                          
+                            alert("error");
+                        }
+}).done(function( datanew ) {
+    console.log(datanew);
+
+    
+    $('#table_movies').bootstrapTable({
+        data: datanew.movie_data
+    });
+    $('#table_movies').bootstrapTable("load",datanew.movie_data);
+
+    $('#table_videos').bootstrapTable({
+        data: datanew.video_data
+        
+    });
+    $('#table_videos').bootstrapTable("load",datanew.video_data);
+    
+  });;
+
+}
+
+function getRestData2(urlCall) {
+    $.ajax({ 
+       type:"GET",
+       dataType: "jsonp",
+       jsonp: false ,
+       
+       cache :true,
+       url: urlCall,
+       jsonpCallback: "jsonpCallback",
+       success: function(data){
+
+       opdata=data;
+       
+       },
+       error: function(data)
+                            {
+                                alert("error");
+                            }
+    }).done(function( datanew ) {
+        
+        $('#table_videos_surprise_me').bootstrapTable({
+            data: datanew.movie_data
+        });
+        $('#table_videos_surprise_me').bootstrapTable("load",datanew.movie_data);
+        
+      });;
+
+}
+
+function getRestData3(urlCall) {
+
+    $.ajax({ 
+       type:"GET",
+       dataType: "jsonp",
+       jsonp: false ,
+       
+       cache :true,
+       url: urlCall,
+       jsonpCallback: "jsonpCallback",
+       success: function(data)
+       {
+        opdata=data;
+       },
+       error: function(data)
+                            {
+                                alert("error");
+                            }
+    }).done(function(datanew) {
+
+        var trace1 = {
+          x: datanew.romance.map(a => a.year),
+          y: datanew.romance.map(a => a.num),
+          mode: 'lines+markers',
+          name: 'romance',
+          marker: {
+            color: 'rgb(128, 0, 128)',
+            size: 8
+          },
+          line: {
+            color: 'rgb(128, 0, 128)',
+            width: 1
+          }
+        };
+
+        var trace2 = {
+          x: datanew.horror.map(a => a.year),
+          y: datanew.horror.map(a => a.num),
+          mode: 'lines+markers',
+          name: 'horror',
+          marker: {
+            color: 'red',
+            size: 8
+          },
+          line: {
+            color: 'red',
+            width: 1
+          }
+        };
+
+        var trace3 = {
+          x: datanew.fantasy.map(a => a.year),
+          y: datanew.fantasy.map(a => a.num),
+          mode: 'lines+markers',
+          name: 'fantasy',
+          marker: {
+            color: 'pink',
+            size: 8
+          },
+          line: {
+            color: 'pink',
+            width: 1
+          }
+        };
+
+        var trace4 = {
+          x: datanew.comedy.map(a => a.year),
+          y: datanew.comedy.map(a => a.num),
+          mode: 'lines+markers',
+          name: 'comedy',
+          marker: {
+            color: 'black',
+            size: 8
+          },
+          line: {
+            color: 'black',
+            width: 1
+          }
+        };
+
+        var trace5 = {
+          x: datanew.action.map(a => a.year),
+          y: datanew.action.map(a => a.num),
+          mode: 'lines+markers',
+          name: 'action',
+          marker: {
+            color: 'yellow',
+            size: 8
+          },
+          line: {
+            color: 'yellow',
+            width: 1
+          }
+        };
+
+
+        var trace6 = {
+          x: datanew.nonfiction.map(a => a.year),
+          y: datanew.nonfiction.map(a => a.num),
+          mode: 'lines+markers',
+          name: 'nonfiction',
+          marker: {
+            color: 'orange',
+            size: 8
+          },
+          line: {
+            color: 'orange',
+            width: 1
+          }
+        };
+
+        var data_traces_romance = [trace1];
+        var data_traces_horror = [trace2];
+        var data_traces_fantasy = [trace3];
+        var data_traces_comedy = [trace4];
+        var data_traces_action = [trace5];
+        var data_traces_nonfiction = [trace6];
+
+        var data_genre_romance = {
+          title: 'Romance Genre Trends Over the Years'
+        };
+
+        var data_genre_horror = {
+          title: 'Horror Genre Trends Over the Years'
+        };
+
+        var data_genre_fantasy = {
+          title: 'Fantasy Genre Trends Over the Years'
+        };
+
+        var data_genre_comedy = {
+          title: 'Comedy Genre Trends Over the Years'
+        };
+
+        var data_genre_action = {
+          title: 'Action Genre Trends Over the Years'
+        };
+
+        var data_genre_nonfiction = {
+          title: 'Non-Fiction Genre Trends Over the Years'
+        };
+
+        console.log(datanew.romance.map(a => a.year));
+        console.log(datanew.romance.map(a => a.num));
+        console.log(datanew.horror.map(a => a.year));
+        console.log(datanew.horror.map(a => a.num));
+
+        console.log(datanew);
+        Plotly.newPlot('myDiv_vertical_genre_romance', data_traces_romance, data_genre_romance);
+        Plotly.newPlot('myDiv_vertical_genre_horror', data_traces_horror, data_genre_horror);
+        Plotly.newPlot('myDiv_vertical_genre_fantasy', data_traces_fantasy, data_genre_fantasy);
+        Plotly.newPlot('myDiv_vertical_genre_comedy', data_traces_comedy, data_genre_comedy);
+        Plotly.newPlot('myDiv_vertical_genre_action', data_traces_action, data_genre_action);
+        Plotly.newPlot('myDiv_vertical_genre_nonfiction', data_traces_nonfiction, data_genre_nonfiction);
+    });
+
+}
+
+
+function getRestData4(urlCall) {
+    $.ajax({ 
+       type:"GET",
+       dataType: "jsonp",
+       jsonp: false ,
+       
+       cache :true,
+       url: urlCall,
+       jsonpCallback: "jsonpCallback",
+       success: function(data){
+
+       opdata=data;
+       
+       },
+       error: function(data)
+                            {
+                                alert("error");
+                            }
+    }).done(function(datanew) {
+
+        var data_summary = [{
+        values: datanew.movie_data.map(a => a.count),
+        labels: datanew.movie_data.map(a => a.genre),
+        type: 'pie'
+        }];
+
+        Plotly.newPlot('myDiv_summary_pie', data_summary);
+        
+      });
+
+}
+
+function getRestData5(urlCall) {
+    alert(urlCall);
+    console.log(urlCall);
+    $.ajax({ 
+       type:"GET",
+       dataType: "json",
+       jsonp: false ,
+       
+       cache :true,
+       url: urlCall,
+       jsonpCallback: "jsonpCallback",
+       success: function(data){
+
+       opdata=data;
+       
+       },
+       error: function(data)
+                            {
+                                alert("error");
+                            }
+    }).done(function(datanew) {
+        alert(datanew);
+        document.getElementById("json").innerHTML = JSON.stringify(datanew, undefined, 2)
+        
+      });
+
+}
 
 var $table_movies = $('#table_movies');
-var mydata_movies = 
-[
-    {
-        "movie": 0,
-        "rating": "test0",
-        "thumbnail": "$0"
-    },
-    {
-        "movie": 1,
-        "rating": "test1",
-        "thumbnail": "$1"
-    },
-    {
-        "movie": 2,
-        "rating": "test2",
-        "thumbnail": "$2"
-    },
-    {
-        "movie": 3,
-        "rating": "test3",
-        "thumbnail": "$3"
-    },
-    {
-        "movie": 4,
-        "rating": "test4",
-        "thumbnail": "$4"
-    },
-    {
-        "movie": 5,
-        "rating": "test5",
-        "thumbnail": "$5"
-    },
-    {
-        "movie": 6,
-        "rating": "test6",
-        "thumbnail": "$6"
-    },
-    {
-        "movie": 7,
-        "rating": "test7",
-        "thumbnail": "$7"
-    },
-    {
-        "movie": 8,
-        "rating": "test8",
-        "thumbnail": "$8"
-    },
-    {
-        "movie": 9,
-        "rating": "test9",
-        "thumbnail": "$9"
-    },
-    {
-        "movie": 10,
-        "rating": "test10",
-        "thumbnail": "$10"
-    },
-    {
-        "movie": 11,
-        "rating": "test11",
-        "thumbnail": "$11"
-    },
-    {
-        "movie": 12,
-        "rating": "test12",
-        "thumbnail": "$12"
-    },
-    {
-        "movie": 13,
-        "rating": "test13",
-        "thumbnail": "$13"
-    },
-    {
-        "movie": 14,
-        "rating": "test14",
-        "thumbnail": "$14"
-    },
-    {
-        "movie": 15,
-        "rating": "test15",
-        "thumbnail": "$15"
-    },
-    {
-        "movie": 16,
-        "rating": "test16",
-        "thumbnail": "$16"
-    },
-    {
-        "movie": 17,
-        "rating": "test17",
-        "thumbnail": "$17"
-    },
-    {
-        "movie": 18,
-        "rating": "test18",
-        "thumbnail": "$18"
-    },
-    {
-        "movie": 19,
-        "rating": "test19",
-        "thumbnail": "$19"
-    },
-    {
-        "movie": 20,
-        "rating": "test20",
-        "thumbnail": "$20"
-    }
-];
-
-$(function () {
-    $('#table_movies').bootstrapTable({
-        data: mydata_movies
-    });
-});
-
 
 var $table_videos = $('#table_videos');
-var mydata_videos = 
-[
-    {
-        "video": 0,
-        "rating": "test0",
-        "thumbnail": "$0"
-    },
-    {
-        "video": 1,
-        "rating": "test1",
-        "thumbnail": "$1"
-    },
-    {
-        "video": 2,
-        "rating": "test2",
-        "thumbnail": "$2"
-    },
-    {
-        "video": 3,
-        "rating": "test3",
-        "thumbnail": "$3"
-    },
-    {
-        "video": 4,
-        "rating": "test4",
-        "thumbnail": "$4"
-    },
-    {
-        "video": 5,
-        "rating": "test5",
-        "thumbnail": "$5"
-    },
-    {
-        "video": 6,
-        "rating": "test6",
-        "thumbnail": "$6"
-    },
-    {
-        "video": 7,
-        "rating": "test7",
-        "thumbnail": "$7"
-    },
-    {
-        "video": 8,
-        "rating": "test8",
-        "thumbnail": "$8"
-    },
-    {
-        "video": 9,
-        "rating": "test9",
-        "thumbnail": "$9"
-    },
-    {
-        "video": 10,
-        "rating": "test10",
-        "thumbnail": "$10"
-    },
-    {
-        "video": 11,
-        "rating": "test11",
-        "thumbnail": "$11"
-    },
-    {
-        "video": 12,
-        "rating": "test12",
-        "thumbnail": "$12"
-    },
-    {
-        "video": 13,
-        "rating": "test13",
-        "thumbnail": "$13"
-    },
-    {
-        "video": 14,
-        "rating": "test14",
-        "thumbnail": "$14"
-    },
-    {
-        "video": 15,
-        "rating": "test15",
-        "thumbnail": "$15"
-    },
-    {
-        "video": 16,
-        "rating": "test16",
-        "thumbnail": "$16"
-    },
-    {
-        "video": 17,
-        "rating": "test17",
-        "thumbnail": "$17"
-    },
-    {
-        "video": 18,
-        "rating": "test18",
-        "thumbnail": "$18"
-    },
-    {
-        "video": 19,
-        "rating": "test19",
-        "thumbnail": "$19"
-    },
-    {
-        "video": 20,
-        "rating": "test20",
-        "thumbnail": "$20"
-    }
-];
 
-$(function () {
-    $('#table_videos').bootstrapTable({
-        data: mydata_videos
-    });
-});
+var $table_videos_random = $('#table_videos_surprise_me');
+
  
   	$(function () {
     $('.button-checkbox').each(function () {
@@ -334,16 +431,18 @@ $(function () {
 });
 
 
+
 function sendSliderValues(val1,val2,val3,val4,val5,val6) {
 
-	alert(val1 + val2 + val3 + val4 + val5 + val6);
-	$('#results').show();	
+    urlc="http://localhost:8080/dotproduct?oslider="+val1+"&cslider="+val2+"&eslider="+val3+"&aslider="+val4+"&nslider="+val5+"&nfslider="+val6;
+    getRestData(urlc);
+    $('#results').show();
 }
 
 function getDefaultSelectedCheckbox() {
-
-   var array = ['Non-Fiction', 'Fantasy', 'Romance', 'Horror', 'Action', 'Comedy'];
-   switch(array[0].toLowerCase()) {
+   var user_genre=["romance"];
+   
+   switch(user_genre[0]) {
     case "comedy":
         $('#comedy').prop('checked','true');
         break;
@@ -369,7 +468,8 @@ function getDefaultSelectedCheckbox() {
 
 function getSelectedGenreData() {
 
-	var selectedCheckBox = [];
+   var selectedCheckBox = [];
+   var gList="";
 	$('.button-checkbox').each(function () {
 		 var $widget = $(this),
 		     $checkbox = $widget.find('input:checkbox');
@@ -379,15 +479,53 @@ function getSelectedGenreData() {
 		 	selectedCheckBox.push($checkbox.prop('id'));
 		 }
 	});
-	alert(selectedCheckBox);
+
+    var genre = "";
+    var ordered_genre = ["non-fiction","fantasy","romance","horror","action","comedy"];
+    for (var i = 0; i < ordered_genre.length; i++) {
+        if (selectedCheckBox.includes(ordered_genre[i])) {
+            genre = genre+ordered_genre[i]+"=1"+"&";
+        }
+        else {
+            genre = genre+ordered_genre[i]+"=0"+"&";
+        }
+    }
+    genre = genre.substring(0, genre.length - 1);
+    urlc="http://localhost:8080/userpref?"+genre;
+    getRestData1(urlc);
+}
+
+function genRandomVideos() {
+    urld = "http://localhost:8080/getSurprise";
+    getRestData2(urld);
+}
+
+function genGenreTrends(){
+    urle = "http://localhost:8080/getYearGenre";
+    getRestData3(urle);
+}
+
+function genSummaryAnalysis(){
+    urlf = "http://localhost:8080/getGenreCount";
+    getRestData4(urlf);
+}
+
+function getQueryResult() {
+
+    urlsparql="http://localhost:3030/ds/sparql?query=";
+    var query = quill.getText();
+    urlsparql=urlsparql+encodeURIComponent(query);
+    getRestData5(urlsparql);
 }
 
 </script>
 
- <!--<div class="container">-->
 <div class="customContainer">
     <div class="page-header">
-        <h2> Movies/Videos Recommendation system based upon personality type :) </h2>
+        <div class = "jumbotron" align="center" style="padding : 10px 5px 10px 10px;">
+          <h4> CSCI 586 : Database Interoperability </h4>
+          <h3><p><b>Movies/Videos Recommendation system based upon personality type using DBI techniques</b></p></h3>
+        </div>
     </div>
     <div class="row">
 
@@ -395,23 +533,17 @@ function getSelectedGenreData() {
             <div class="panel with-nav-tabs panel-primary">
                 <div class="panel-heading">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1primary" data-toggle="tab">Primary 1</a></li>
-                            <li><a href="#tab2primary" data-toggle="tab">Primary 2</a></li>
-                            <li><a href="#tab3primary" data-toggle="tab">Primary 3</a></li>
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#tab4primary" data-toggle="tab">Primary 4</a></li>
-                                    <li><a href="#tab5primary" data-toggle="tab">Primary 5</a></li>
-                                </ul>
-                            </li>
+                            <li class="active"><a href="#tab1primary" data-toggle="tab">Videos Recommender</a></li>
+                            <li><a href="#tab2primary" data-toggle="tab">Surprise Me</a></li>
+                            <li><a href="#tab3primary" data-toggle="tab">SPARQL Editor</a></li>
+                            <li><a href="#tab4primary" data-toggle="tab">Genre Trends</a></li>
+                            <li><a href="#tab5primary" data-toggle="tab">Dataset Analysis</a></li>
                         </ul>
                 </div>
                 <div class="panel-body">
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="tab1primary">
                         	<div id="myDiv_pie"><!-- Plotly chart will be drawn inside this DIV --></div>
-
                         	<div>
 						      <h2>Rate your personality traits!</h2>
 						      <hr/>
@@ -530,9 +662,9 @@ function getSelectedGenreData() {
 								        <table id="table_movies" class="table table-striped">
 									        <thead>
 									            <tr>
-									                <th data-field="movie">Movie</th>
-									                <th data-field="rating">Rating</th>
-									                <th data-field="thumbnail">Thumbnail</th>
+									                <th data-field="title">Movie</th>
+									                <th data-field="popularity">Rating</th>
+									                <th data-field="year">Year</th>
 									            </tr>
 									        </thead>
 									    </table>
@@ -544,9 +676,9 @@ function getSelectedGenreData() {
 									  <table id="table_videos" class="table table-striped" >
 									        <thead>
 									            <tr>
-									                <th data-field="video">Video</th>
-									                <th data-field="rating">Rating</th>
-									                <th data-field="thumbnail">Thumbnail</th>
+									                <th data-field="title">Video</th>
+									                <th data-field="popularity">Rating</th>
+									                <th data-field="year">Thumbnail</th>
 									            </tr>
 									        </thead>
 									    </table>
@@ -557,18 +689,102 @@ function getSelectedGenreData() {
                         	
                         </div>	
                         <div class="tab-pane fade" id="tab2primary">
-                        	
-						      <h2>Movies VS Videos!</h2>
-						      <hr/>
-						      <div align="center">
-						      		<div id="myDiv_vertical"><!-- Plotly chart will be drawn inside this DIV --></div>
-					      	</div>
+
+                            <div class="row">
+                                    <div align="center" style="padding : 20px 20px 20px 20px;" >
+                                        <button type="button" class="btn btn-success" onclick="genRandomVideos();">Surprise Me!</button>
+                                    </div>
+                                    
+                            </div>
+
+                            <div class="col-xs-12">          
+                                      <table id="table_videos_surprise_me" class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th data-field="title">Video</th>
+                                                    <th data-field="popularity">Rating</th>
+                                                    <th data-field="year">Year</th>
+                                                    <!--<th data-field="thumbnail" data-formatter="imageFormatter">Thumbnail</th>-->
+                                                    <th data-field="homepage" data-formatter="imageFormatter">Thumbnail</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                            </div>
+
+                            <script>
+
+                                    function imageFormatter(value, row) {
+                                      return '<a href="'+value+'">'+value+'</a>';
+                                    }
+
+                            </script>
                         </div>
                         <div class="tab-pane fade" id="tab3primary">
+
+                          <div id="editor-container"></div>
+
+                                    <script type="text/javascript">
+                                        
+                                                  var quill = new Quill('#editor-container', {
+                                                  modules: {
+                                                    toolbar: [
+                                                      [{ header: [1, 2, false] }],
+                                                      ['bold', 'italic', 'underline'],
+                                                      ['image', 'code-block']
+                                                    ]
+                                                  },
+                                                  placeholder: 'Enter SPARQL Query...',
+                                                  theme: 'snow'  // or 'bubble'
+                                                });
+                                    </script>
+
+                                    <div align="center" style="padding-top: 50px;">
+                                        <button type="button" class="btn btn-success" onclick="getQueryResult();">Submit Query</button>
+                                    </div>
+
+                                    <h2>Query Result...</h2>
+                                    <hr/>
+                                    <div class="row" style="padding : 5px 20px 5px 20px;" >
+                                        <pre id="json"></pre>
+                                    </div>
+
+                            
                         	
                         </div>
-                        <div class="tab-pane fade" id="tab4primary">Primary 4</div>
-                        <div class="tab-pane fade" id="tab5primary">Primary 5</div>
+                        <div class="tab-pane fade" id="tab4primary">
+
+                            <div class="row">
+                                    <div align="center" style="padding : 20px 20px 20px 20px;" >
+                                        <button type="button" class="btn btn-success" onclick="genGenreTrends();">Genre Trends over the Years</button>
+                                    </div>
+                                    
+                            </div>
+
+                              <hr/>
+                              <div align="center">
+                                    <div id="myDiv_vertical_genre_romance"><!-- Plotly chart will be drawn inside this DIV --></div>
+                                    <div id="myDiv_vertical_genre_horror"><!-- Plotly chart will be drawn inside this DIV --></div>
+                                    <div id="myDiv_vertical_genre_fantasy"><!-- Plotly chart will be drawn inside this DIV --></div>
+                                    <div id="myDiv_vertical_genre_comedy"><!-- Plotly chart will be drawn inside this DIV --></div>
+                                    <div id="myDiv_vertical_genre_action"><!-- Plotly chart will be drawn inside this DIV --></div>
+                                    <div id="myDiv_vertical_genre_nonfiction"><!-- Plotly chart will be drawn inside this DIV --></div>
+                              </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="tab5primary">
+
+                          <div class="row">
+                                    <div align="center" style="padding : 20px 20px 20px 20px;">
+                                        <button type="button" class="btn btn-success" onclick="genSummaryAnalysis();">Summary of DataSet</button>
+                                    </div>
+                                    
+                            </div>
+
+                            <hr/>
+                            <div align="center">
+                                <div id="myDiv_summary_pie"><!-- Plotly chart will be drawn inside this DIV --></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -577,29 +793,29 @@ function getSelectedGenreData() {
 </div>
 
 <script>
+
 	    var data_pie = [{
-		  values: [72, 8, 5, 5, 5,5],   
+		  values: [ 96, 26, 46, 51, 13, 48],   
 		  labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
 		  domain: {
-		    x: [0, .15]
+		    x: [0, .15] 
 		  },
 		  name: 'Comedy',
 		  hoverinfo: 'label+percent',
 		  hole: .4,
 		  type: 'pie'
 		},{
-		  values: [41, 38, 3, 3, 12,3],
+		  values: [79, 36, 16, 14, 93,56],
 		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
 		  text: 'Action',
-		  textposition: 'inside',
 		  domain: {x: [.17, .32]},
 		  name: 'Action',
 		  hoverinfo: 'label+percent',
 		  hole: .4,
 		  type: 'pie'
-		},
+		},  
 		{
-		  values: [10, 12, 16, 21, 29,12], 
+		  values: [84, 86, 36, 42, 5,51], 
 		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
 		  text: 'Horror',
 		  textposition: 'inside',
@@ -610,7 +826,7 @@ function getSelectedGenreData() {
 		  type: 'pie'
 		},
 		{
-		  values: [.5, 6, .5, .3, 2,.7],
+		  values: [10, 75, 50, 31, 94,30],
 		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
 		  text: 'Romance',
 		  textposition: 'inside',
@@ -621,7 +837,7 @@ function getSelectedGenreData() {
 		  type: 'pie'
 		},
 		{
-		  values: [191, 17, 142, 15, 19,16],   
+		  values: [93, 50, 5, 60, 44,45],   
 		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
 		  text: 'Fantasy',
 		  textposition: 'inside',
@@ -632,7 +848,7 @@ function getSelectedGenreData() {
 		  type: 'pie'
 		},
 		{
-		  values: [.6,.4,.1,.7,.2,8],
+		  values: [11,11,11,11,11,99],
 		 labels: ['Openness', 'Conscientiousness', 'Extraversion', 'Agreeableness', 'Neuroticism','Nerd'],
 		  text: 'Non-Fiction',
 		  textposition: 'inside',
@@ -645,41 +861,66 @@ function getSelectedGenreData() {
 ];
 
 var layout = {
-  title: 'Personality Type Characteristics'
+  title: 'Personality Traits',
+  annotations: [
+    {
+      font: {
+        size: 16
+      },
+      showarrow: false,
+      text: 'C',
+      x: 0.07,
+      y: 0.5
+    },
+    {
+      font: {
+        size: 16
+      },
+      showarrow: false,
+      text: 'A',
+      x: 0.24,
+      y: 0.5
+    },
+    {
+      font: {
+        size: 16
+      },
+      showarrow: false,
+      text: 'H',
+      x: 0.415,
+      y: 0.50
+    },
+    {
+      font: {
+        size: 16
+      },
+      showarrow: false,
+      text: 'R',
+      x: 0.585,
+      y: 0.5
+    },
+    {
+      font: {
+        size: 16
+      },
+      showarrow: false,
+      text: 'F',
+      x: 0.757,
+      y: 0.5
+    },
+    {
+      font: {
+        size: 16
+      },
+      showarrow: false,
+      text: 'NF',
+      x: 0.938  ,
+      y: 0.5
+    }
+  ]
 };
 
 Plotly.newPlot('myDiv_pie', data_pie, layout);
-
-// Rating
-var data_horizontal_bar = [{
-  type: 'bar',
-  x: [14, 20, 23, 25, 45, 50],
-  y: ['Comedy', 'Action', 'Horror', 'Romance', 'Fantasy', 'Non-Fiction'],
-  orientation: 'h',
-  marker: { color: ['red', 'green', 'blue', 'yellow', 'pink', 'orange'] }
-}];
-
-Plotly.newPlot('myDiv_horizontal_bar', data_horizontal_bar);
-
-// vertical bar chart
-var trace1 = {
-  x: ['giraffes', 'orangutans', 'monkeys'], 
-  y: [20, 14, 23], 
-  name: 'SF Zoo', 
-  type: 'bar'
-};
-
-var trace2 = {
-  x: ['giraffes', 'orangutans', 'monkeys'], 
-  y: [12, 18, 29], 
-  name: 'LA Zoo', 
-  type: 'bar'
-};
-
-var data_vertical = [trace1, trace2];
-var layout_vertical = {barmode: 'group'};
-
-Plotly.newPlot('myDiv_vertical', data_vertical, layout_vertical);
 
 </script>
 </body>
